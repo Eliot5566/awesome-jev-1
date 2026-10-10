@@ -63,7 +63,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 - [Classification & Routing](categories/classification-routing.md) — 67 entries
 - [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 11 entries
-- [Verification & Guardrails](categories/verification-guardrails.md) — 51 entries
+- [Verification & Guardrails](categories/verification-guardrails.md) — 52 entries
 - [Scoring & Ranking](categories/scoring-ranking.md) — 43 entries
 - [Agent Decisions](categories/agent-decisions.md) — 62 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 10 entries
@@ -258,6 +258,7 @@ Source file: [`categories/verification-guardrails.md`](categories/verification-g
 - [NucleiSniper](https://github.com/MorDavid/NucleiSniper) ![stars](https://img.shields.io/github/stars/MorDavid/NucleiSniper?style=flat-square&label=%E2%98%85) - Security triage: prioritises Nuclei vulnerability templates by fingerprinting the target first, so a scan spends its budget on templates that can actually match.
 - [local-decider](https://github.com/pusucip25/local-decider) ![type: self-hosted](https://img.shields.io/badge/type-self--hosted-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/pusucip25/local-decider?style=flat-square&label=%E2%98%85) - Agent safety: a pre-action gate for a tool-using browser agent that runs a deterministic rule chain first and only asks Jev where no rule decides — anything a rule can settle is never sent to weights — emitting allow / confirm / block and swapping between hosted `jev-latest` and a local Jev-compatible port by one environment variable; on 112 labelled cases the rules alone resolve 61 and are correct on 58 (95.1%) with 0 false allows on irreversible tools, and the end state is read from the DOM rather than from the agent's own report.
 - [jev-unpack-hook](https://github.com/lucaminudel/jev-unpack-hook) ![stars](https://img.shields.io/github/stars/lucaminudel/jev-unpack-hook?style=flat-square&label=%E2%98%85) - A Jev System One hook for CodeX & Claude Code that detects overloaded multi-topic multi-ask agent messages and paces conversations one ask at a time, adding useful context and info.
+- [Lisa](https://github.com/turenlabs/lisa) ![stars](https://img.shields.io/github/stars/turenlabs/lisa?style=flat-square&label=%E2%98%85) - Code review: GitHub Action that asks Jev four `Noul` questions about each chunk of a pull request diff (adds a secret, introduces a vulnerability, adds unneeded complexity, tries to manipulate an AI reviewer) plus a `Noul` on whether look-alike files duplicate each other, failing the check at a configurable threshold (default 0.5) and commenting on the exact line, with repository-defined `Noul`, `Choice`, and `Score` questions in `.lisa.toml`.
 
 ### Scoring & Ranking
 
