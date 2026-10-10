@@ -69,7 +69,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 10 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 40 entries
 - [Calibration & Research](categories/calibration-research.md) — 51 entries
-- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 107 entries
+- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 108 entries
 - [Game & Simulation](categories/game-simulation.md) — 26 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 9 entries
 - [Finance & Trading](categories/finance-trading.md) — 8 entries
@@ -598,6 +598,7 @@ Source file: [`categories/infra-sdks-integrations.md`](categories/infra-sdks-int
 - [TypeSafe Jev + ComfyUI](https://github.com/youneselfakir0/typesafe-jev-comfyui-integration) ![stars](https://img.shields.io/github/stars/youneselfakir0/typesafe-jev-comfyui-integration?style=flat-square&label=%E2%98%85) - Image generation: routes a prompt to one of three ComfyUI workflow templates with a Jev decision rather than a keyword match.
 - [system_one_client](https://github.com/schainks/system_one_client) ![stars](https://img.shields.io/github/stars/schainks/system_one_client?style=flat-square&label=%E2%98%85) - Elixir ecosystem: one client that speaks to several System One decision models, Jev among them, behind a single interface.
 - [Bud-Decision-Studio](https://github.com/BudEcosystem/Bud-Decision-Studio) ![stars](https://img.shields.io/github/stars/BudEcosystem/Bud-Decision-Studio?style=flat-square&label=%E2%98%85) - a cross-platform desktop app (macOS, Windows, Linux) that runs `laya`, `kev`, `laya-typed-decisions` etc locally behind the Jev API (`POST /v1/systemone`), with a Playground, versioned templates with decision history, and a Train page for LoRA fine-tuning on your own labelled decisions.
+- [OpenJevSwift](https://github.com/Algorythm-Canada/OpenJevSwift) ![type: self-hosted](https://img.shields.io/badge/type-self--hosted-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/Algorythm-Canada/OpenJevSwift?style=flat-square&label=%E2%98%85) - Local runtime: native Swift port of OpenJev that answers `Choice`, `Score` and `Noul` questions behind a Jev-compatible `POST /v1/systemone` endpoint on Apple silicon Macs (DiffusionGemma and JevK5 on MLX; Verdict and Laya on Core ML, with upstream's top answer on all 666 compared items) and inside iPhone apps through its Swift libraries, with a CI job that runs TypeSafe's Python and TypeScript SDKs against it unchanged.
 
 ### Game & Simulation
 
