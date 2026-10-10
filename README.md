@@ -63,7 +63,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 - [Classification & Routing](categories/classification-routing.md) — 67 entries
 - [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 11 entries
-- [Verification & Guardrails](categories/verification-guardrails.md) — 50 entries
+- [Verification & Guardrails](categories/verification-guardrails.md) — 51 entries
 - [Scoring & Ranking](categories/scoring-ranking.md) — 43 entries
 - [Agent Decisions](categories/agent-decisions.md) — 62 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 10 entries
@@ -257,6 +257,7 @@ Source file: [`categories/verification-guardrails.md`](categories/verification-g
 - [jev-runtime-security](https://github.com/ringzerosec/jev-runtime-security) ![stars](https://img.shields.io/github/stars/ringzerosec/jev-runtime-security?style=flat-square&label=%E2%98%85) - AI security: asks Jev a Choice on tool-call argument risk and a Noul on sensitive-data exposure for AI coding agents, where the model answer can only raise severity and the kernel still decides the syscall.
 - [NucleiSniper](https://github.com/MorDavid/NucleiSniper) ![stars](https://img.shields.io/github/stars/MorDavid/NucleiSniper?style=flat-square&label=%E2%98%85) - Security triage: prioritises Nuclei vulnerability templates by fingerprinting the target first, so a scan spends its budget on templates that can actually match.
 - [local-decider](https://github.com/pusucip25/local-decider) ![type: self-hosted](https://img.shields.io/badge/type-self--hosted-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/pusucip25/local-decider?style=flat-square&label=%E2%98%85) - Agent safety: a pre-action gate for a tool-using browser agent that runs a deterministic rule chain first and only asks Jev where no rule decides — anything a rule can settle is never sent to weights — emitting allow / confirm / block and swapping between hosted `jev-latest` and a local Jev-compatible port by one environment variable; on 112 labelled cases the rules alone resolve 61 and are correct on 58 (95.1%) with 0 false allows on irreversible tools, and the end state is read from the DOM rather than from the agent's own report.
+- [jev-unpack-hook](https://github.com/lucaminudel/jev-unpack-hook) ![stars](https://img.shields.io/github/stars/lucaminudel/jev-unpack-hook?style=flat-square&label=%E2%98%85) - A Jev System One hook for CodeX & Claude Code that detects overloaded multi-topic multi-ask agent messages and paces conversations one ask at a time, adding useful context and info.
 
 ### Scoring & Ranking
 
