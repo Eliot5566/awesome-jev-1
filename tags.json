@@ -2,7 +2,7 @@
   "$comment": "Single source for the entry tag vocabulary (issue #138). Read by scripts/build-readme.py, which also regenerates the vocabulary table in CONTRIBUTING.md between its tags markers. Add a value here, nowhere else.",
   "axes": {
     "agent": {
-      "$comment": "`opencode` was here until 2026-09-22. It entered the vocabulary from a misread: a scan took \"OpenCode Zen's free tier\" in the jev-agent-skill description for the OpenCode coding agent, but that is the LLM gateway the project routes through. That entry has always been tagged claude-code, and no entry ever used an opencode tag. Add it back when a real OpenCode project appears (see issue #154).",
+      "$comment": "`opencode` was here until 2026-09-22, removed after it turned out to have entered from a misread: a scan took \"OpenCode Zen's free tier\" in the jev-agent-skill description for the OpenCode coding agent, but that is the LLM gateway the project routes through. Removing it was what surfaced the real cost: opencode-jev-compaction had been sitting in the catalogue the whole time mentioning OpenCode, untaggable because the value was gone. It returns on 2026-10-11 with that entry tagged and a second one added, an OpenCode V2 plugin that states OpenCode in its own README and links opencode.ai/v2/docs/ - first-party evidence, not a keyword hit.",
       "description": "The coding agent an entry targets. Colours are anchored on the vendor's brand colour where there is one, then darkened until white badge text clears WCAG AA; the raw brand colours do not (Anthropic clay #D97757 carries white text at 2.9:1).",
       "values": {
         "multi": {
@@ -47,6 +47,11 @@
           "label": "OpenClaw",
           "color": "B91C1C",
           "definition": "Targets the OpenClaw agent through its plugin, hook or skill API. Not projects that merely have claw in their name."
+        },
+        "opencode": {
+          "label": "OpenCode",
+          "color": "7C3AED",
+          "definition": "OpenCode V2 plugins and hooks. Re-entered on 2026-10-11 with a real plugin; the first entry, on 2026-09-22, was removed because it had been read off an LLM gateway's name rather than a coding agent."
         }
       }
     },

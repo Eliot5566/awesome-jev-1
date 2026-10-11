@@ -41,6 +41,7 @@ SUPPORT = {
     "cline":       r"\bcline\b",
     "dsh":         r"deepseek[ -]?harness|\bdsh\b",
     "openclaw":    r"openclaw",
+    "opencode":    r"opencode",
     "multi":       None,
 }
 
