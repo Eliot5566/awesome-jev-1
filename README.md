@@ -67,15 +67,15 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Scoring & Ranking](categories/scoring-ranking.md) — 43 entries
 - [Agent Decisions](categories/agent-decisions.md) — 62 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 10 entries
-- [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 41 entries
+- [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 42 entries
 - [Calibration & Research](categories/calibration-research.md) — 51 entries
-- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 111 entries
+- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 112 entries
 - [Game & Simulation](categories/game-simulation.md) — 26 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 9 entries
 - [Finance & Trading](categories/finance-trading.md) — 8 entries
 - [Compliance & Legal](categories/compliance-legal.md) — 2 entries
 - [Content Moderation](categories/content-moderation.md) — 11 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 104 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 105 entries
 
 ### Open categories still being seeded
 
@@ -438,6 +438,7 @@ Source file: [`categories/evaluation-benchmarking.md`](categories/evaluation-ben
 - [Decision Models Showdown](https://github.com/ivipinmishra/decision-models-showdown) ![stars](https://img.shields.io/github/stars/ivipinmishra/decision-models-showdown?style=flat-square&label=%E2%98%85) - Head-to-head: puts OpenAI Decisions and Jev on the same questions in two demo apps, a support ticket router over 20 labelled tickets and a cloud alert triage over 15 labelled alerts, where the code acts on the typed answers.
 - [classifier-bench](https://github.com/CMaintz/classifier-bench) ![stars](https://img.shields.io/github/stars/CMaintz/classifier-bench?style=flat-square&label=%E2%98%85) - Head-to-head speed: benchmarks Jev against OpenAI Decisions and an LLM over a frozen corpus of 2,321 labelled cases across 31 tasks, reporting latency and registry-priced cost, and running offline in dry-run mode without API keys.
 - [A Thermometer, Not an Analyst](https://alexvidovich.com/papers/text-judge) - Working paper: puts a text judge next to a live trading system only as a reader that never prescribes, and compares Jev with Claude as a blind headline judge behind six gates before either can act.
+- [Microsoft-Decision-1](https://commandline.microsoft.com/microsoft-decision-1-model-foundry/) - Competitor benchmark: Microsoft's hosted decision model claims the top accuracy across 36 benchmarks and uses 35x lower P50 latency than GPT-6 Sol, and flips its decision on only 1.3% of eight perturbation styles, in a post later updated to add Jev's accuracy and calibration numbers.
 
 ### Calibration & Research
 
@@ -610,6 +611,7 @@ Source file: [`categories/infra-sdks-integrations.md`](categories/infra-sdks-int
 - [jev-mod](https://github.com/gecm0/jev-mod) ![agent: Claude Code](https://img.shields.io/badge/agent-Claude%20Code-C1512C?style=flat-square) ![stars](https://img.shields.io/github/stars/gecm0/jev-mod?style=flat-square&label=%E2%98%85) - Claude Code mod: adds `$.jev` to the engine so other mods can ask typed `Choice`, `Score` and `Noul` questions and get calibrated probabilities back.
 - [opencode-jev-pre-llm](https://github.com/murilogteixeira/opencode-jev-pre-llm) ![agent: OpenCode](https://img.shields.io/badge/agent-OpenCode-7C3AED?style=flat-square) ![type: plugin](https://img.shields.io/badge/type-plugin-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/murilogteixeira/opencode-jev-pre-llm?style=flat-square&label=%E2%98%85) - Coding agents: an OpenCode V2 plugin that classifies a prompt with Jev before the LLM starts reasoning, so the expensive model only sees requests that need it.
 - [pydecide](https://github.com/gopaljigaur/decide) ![stars](https://img.shields.io/github/stars/gopaljigaur/decide?style=flat-square&label=%E2%98%85) - Python ecosystem: one client that sends the same typed Choice, Score and Noul questions to hosted Jev, OpenRouter, OpenAI's Decisions API, laya and laya-mlx, or any sentence-transformers reranker, walking an ordered fallback chain when a backend errors or answers a Choice or Noul question below a configured confidence threshold (Score answers are not gated, since there is no single confidence number for them), and recording on each response which backend answered and why; it also ships a client class matching `typesafe_sdk.TypeSafeClient`'s constructor and `system_one` call for existing code, without `response_model` or the per-call overrides, and a `/v1/systemone` server their SDK parses unchanged.
+- [Clef-omni](https://runtimewire.com/article/cloudflare-clef-omni-multimodal-decision-model) - Competitor update: Cloudflare's decision model now takes text, images, audio and video in one request, and the cheaper Clef-flash tier had its price cut at the same time.
 
 ### Game & Simulation
 
@@ -800,6 +802,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Deciding when work is finished with typed questions](https://x.com/chengjian1976/status/2106740150264827938) - X (Chinese): a practitioner's workflow for the wrap-up judgment, asking Jev yes/no, either-or and score questions from a local CLI when the machine is on and from a cloud SDK script when it is not.
 - [Can Jev save my inbox from the Democrats?](https://huggingface.co/blog/stephen-solka/use-jev-to-delete-fundraising-emails) - Write-up: a Hugging Face post on using a local decision model to clear a real inbox of political fundraising mail.
 - [Mastering TypeSafe Jev](https://github.com/udooz/mastering-jev-and-kev-book) ![stars](https://img.shields.io/github/stars/udooz/mastering-jev-and-kev-book?style=flat-square&label=%E2%98%85) - Book: a hands-on engineering playbook for decision engines whose thesis is that code computes, LLMs create, Jev decides, and fresh state proves the result, with working Python and a mini-project in every chapter.
+- [Build your own decision model](https://nishtahir.com/build-your-own-decision-model/) - Tutorial: explains that a System One model answers every allowed option with a calibrated probability in a single pass, where a language model constrained to emit the same JSON took 11 passes in the worked example.
 
 ## Submission format
 
