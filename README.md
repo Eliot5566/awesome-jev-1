@@ -69,7 +69,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 10 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 41 entries
 - [Calibration & Research](categories/calibration-research.md) — 51 entries
-- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 110 entries
+- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 111 entries
 - [Game & Simulation](categories/game-simulation.md) — 26 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 9 entries
 - [Finance & Trading](categories/finance-trading.md) — 8 entries
@@ -609,6 +609,7 @@ Source file: [`categories/infra-sdks-integrations.md`](categories/infra-sdks-int
 - [OpenJevSwift](https://github.com/Algorythm-Canada/OpenJevSwift) ![type: self-hosted](https://img.shields.io/badge/type-self--hosted-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/Algorythm-Canada/OpenJevSwift?style=flat-square&label=%E2%98%85) - Local runtime: native Swift port of OpenJev that answers `Choice`, `Score` and `Noul` questions behind a Jev-compatible `POST /v1/systemone` endpoint on Apple silicon Macs (DiffusionGemma and JevK5 on MLX; Verdict and Laya on Core ML, with upstream's top answer on all 666 compared items) and inside iPhone apps through its Swift libraries, with a CI job that runs TypeSafe's Python and TypeScript SDKs against it unchanged.
 - [jev-mod](https://github.com/gecm0/jev-mod) ![agent: Claude Code](https://img.shields.io/badge/agent-Claude%20Code-C1512C?style=flat-square) ![stars](https://img.shields.io/github/stars/gecm0/jev-mod?style=flat-square&label=%E2%98%85) - Claude Code mod: adds `$.jev` to the engine so other mods can ask typed `Choice`, `Score` and `Noul` questions and get calibrated probabilities back.
 - [opencode-jev-pre-llm](https://github.com/murilogteixeira/opencode-jev-pre-llm) ![agent: OpenCode](https://img.shields.io/badge/agent-OpenCode-7C3AED?style=flat-square) ![type: plugin](https://img.shields.io/badge/type-plugin-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/murilogteixeira/opencode-jev-pre-llm?style=flat-square&label=%E2%98%85) - Coding agents: an OpenCode V2 plugin that classifies a prompt with Jev before the LLM starts reasoning, so the expensive model only sees requests that need it.
+- [pydecide](https://github.com/gopaljigaur/decide) ![stars](https://img.shields.io/github/stars/gopaljigaur/decide?style=flat-square&label=%E2%98%85) - Python ecosystem: one client that sends the same typed Choice, Score and Noul questions to hosted Jev, OpenRouter, OpenAI's Decisions API, laya and laya-mlx, or any sentence-transformers reranker, walking an ordered fallback chain when a backend errors or answers a Choice or Noul question below a configured confidence threshold (Score answers are not gated, since there is no single confidence number for them), and recording on each response which backend answered and why; it also ships a client class matching `typesafe_sdk.TypeSafeClient`'s constructor and `system_one` call for existing code, without `response_model` or the per-call overrides, and a `/v1/systemone` server their SDK parses unchanged.
 
 ### Game & Simulation
 
