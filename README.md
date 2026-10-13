@@ -64,11 +64,11 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Classification & Routing](categories/classification-routing.md) — 68 entries
 - [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 11 entries
 - [Verification & Guardrails](categories/verification-guardrails.md) — 53 entries
-- [Scoring & Ranking](categories/scoring-ranking.md) — 43 entries
+- [Scoring & Ranking](categories/scoring-ranking.md) — 44 entries
 - [Agent Decisions](categories/agent-decisions.md) — 62 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 10 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 43 entries
-- [Calibration & Research](categories/calibration-research.md) — 52 entries
+- [Calibration & Research](categories/calibration-research.md) — 53 entries
 - [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 113 entries
 - [Game & Simulation](categories/game-simulation.md) — 26 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 9 entries
@@ -310,6 +310,7 @@ Source file: [`categories/scoring-ranking.md`](categories/scoring-ranking.md)
 - [Chem Autocomplete (ChemIllusion)](https://chemillusion.com/blog/2026-09-25-chem-autocomplete-jev) - Chemistry: uses Jev to rank which RDKit-validated sketcher structure candidates to show as autocomplete cards and in what order (~0.2s per request).
 - [dsh-jev-plugin](https://github.com/luobosibing2/dsh-jev-plugin) ![agent: DeepSeek Harness](https://img.shields.io/badge/agent-DeepSeek%20Harness-2D5BD7?style=flat-square) ![type: plugin](https://img.shields.io/badge/type-plugin-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/luobosibing2/dsh-jev-plugin?style=flat-square&label=%E2%98%85) - Coding agents: asks Jev a `Noul` for each skill summary or original glob path, orders candidates by the returned relevance probability, and supplies the selected skills or ranked paths to DeepSeek Harness, with all features disabled by default.
 - [JevRanker](https://github.com/hgqimo/JevRanker) ![stars](https://img.shields.io/github/stars/hgqimo/JevRanker?style=flat-square&label=%E2%98%85) - Retrieval and RAG: an open-source port of Jev's typed-decision format ([NanoJev](https://github.com/TianyuCodings/NanoJev)'s Qwen3-0.6B, trained on T2Ranking, no hosted API call) that replaces the LLM comparator inside two published search rerankers, BlitzRank's tournament graph and Reranker-Guided Search, where each match is one `Choice` scored over k candidate paths in a single forward pass with zero decoded tokens, reaching 0.6309 nDCG@10 on T2Ranking dev against 0.2162 for the same 0.6B decoding a RankGPT listwise prompt, at 34 ms instead of 752 ms per match and 8.6-9.4x lower per-query latency inside RGS.
+- [Jev vs embeddings for page selection](https://sayora.ai/many-hands/jev-vs-embeddings/) - Production replacement: across 168 caller questions on four small-business websites Jev put the right page first 88% of the time against 70% for production embeddings, and handed the model the wrong page a tenth as often.
 
 ### Agent Decisions
 
@@ -497,6 +498,7 @@ Source file: [`categories/calibration-research.md`](categories/calibration-resea
 - [WaterSheep](https://github.com/SamratDuttaOfficial/WaterSheep) ![type: self-hosted](https://img.shields.io/badge/type-self--hosted-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/SamratDuttaOfficial/WaterSheep?style=flat-square&label=%E2%98%85) - Open alternative: an Apache-2.0 ModernBERT fine-tune that answers `Noul`, `Choice`, `Score` and multi-label questions with a probability for every option, serves Jev's `POST /v1/systemone` locally so TypeSafe's Python SDK runs against it unchanged, and reports 0.026 expected calibration error on its test split.
 - [Gutsy](https://github.com/kouhxp/gutsy) ![stars](https://img.shields.io/github/stars/kouhxp/gutsy?style=flat-square&label=%E2%98%85) - Local decisions: an Apache-2.0 model that answers typed questions with calibrated probabilities on CPU, with no GPU and no hosted API.
 - [Phocinae Largha 150M](https://github.com/Phocinae/Phocinae-Largha-150M-v1) ![stars](https://img.shields.io/github/stars/Phocinae/Phocinae-Largha-150M-v1?style=flat-square&label=%E2%98%85) - Open model: a 144.3M-parameter bilingual (English/Chinese) typed decision model on mmBERT-small that returns calibrated `Choice`, `Score` and `Noul` probabilities in one forward pass so callers gate or escalate on the numbers; runs locally, 21.0 ms p50 per decision on an RTX 5090, with Apache-2.0 weights.
+- [Decision 3.0](https://www.reddit.com/r/LocalLLaMA/comments/1x3th4p/) - Open models: a multimodal decision-model family spanning 0.6B to 27B that reports ranking first on both Jev Decision Index boards.
 
 ### Infra / SDKs / Integrations
 
