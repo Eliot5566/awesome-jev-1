@@ -68,7 +68,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Agent Decisions](categories/agent-decisions.md) — 62 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 10 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 43 entries
-- [Calibration & Research](categories/calibration-research.md) — 51 entries
+- [Calibration & Research](categories/calibration-research.md) — 52 entries
 - [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 113 entries
 - [Game & Simulation](categories/game-simulation.md) — 26 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 9 entries
@@ -496,6 +496,7 @@ Source file: [`categories/calibration-research.md`](categories/calibration-resea
 - [Vev](https://github.com/Xiaooolong/vev) ![stars](https://img.shields.io/github/stars/Xiaooolong/vev?style=flat-square&label=%E2%98%85) - Open alternative: an open-source Jev implementation with vision input, LoRA fine-tuned on Qwen3.5-4B and 9B, serving `Choice`, `Score` and `Noul` questions on the `/v1/systemone` wire format with screenshots and photos placed directly in the state so one decision can use both text and image; weights are CC BY-NC 4.0, non-commercial only.
 - [WaterSheep](https://github.com/SamratDuttaOfficial/WaterSheep) ![type: self-hosted](https://img.shields.io/badge/type-self--hosted-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/SamratDuttaOfficial/WaterSheep?style=flat-square&label=%E2%98%85) - Open alternative: an Apache-2.0 ModernBERT fine-tune that answers `Noul`, `Choice`, `Score` and multi-label questions with a probability for every option, serves Jev's `POST /v1/systemone` locally so TypeSafe's Python SDK runs against it unchanged, and reports 0.026 expected calibration error on its test split.
 - [Gutsy](https://github.com/kouhxp/gutsy) ![stars](https://img.shields.io/github/stars/kouhxp/gutsy?style=flat-square&label=%E2%98%85) - Local decisions: an Apache-2.0 model that answers typed questions with calibrated probabilities on CPU, with no GPU and no hosted API.
+- [Phocinae Largha 150M](https://github.com/Phocinae/Phocinae-Largha-150M-v1) ![stars](https://img.shields.io/github/stars/Phocinae/Phocinae-Largha-150M-v1?style=flat-square&label=%E2%98%85) - Open model: a 144.3M-parameter bilingual (English/Chinese) typed decision model on mmBERT-small that returns calibrated `Choice`, `Score` and `Noul` probabilities in one forward pass so callers gate or escalate on the numbers; runs locally, 21.0 ms p50 per decision on an RTX 5090, with Apache-2.0 weights.
 
 ### Infra / SDKs / Integrations
 
