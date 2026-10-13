@@ -69,7 +69,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 10 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 42 entries
 - [Calibration & Research](categories/calibration-research.md) — 51 entries
-- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 112 entries
+- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 113 entries
 - [Game & Simulation](categories/game-simulation.md) — 26 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 9 entries
 - [Finance & Trading](categories/finance-trading.md) — 8 entries
@@ -612,6 +612,7 @@ Source file: [`categories/infra-sdks-integrations.md`](categories/infra-sdks-int
 - [opencode-jev-pre-llm](https://github.com/murilogteixeira/opencode-jev-pre-llm) ![agent: OpenCode](https://img.shields.io/badge/agent-OpenCode-7C3AED?style=flat-square) ![type: plugin](https://img.shields.io/badge/type-plugin-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/murilogteixeira/opencode-jev-pre-llm?style=flat-square&label=%E2%98%85) - Coding agents: an OpenCode V2 plugin that classifies a prompt with Jev before the LLM starts reasoning, so the expensive model only sees requests that need it.
 - [pydecide](https://github.com/gopaljigaur/decide) ![stars](https://img.shields.io/github/stars/gopaljigaur/decide?style=flat-square&label=%E2%98%85) - Python ecosystem: one client that sends the same typed Choice, Score and Noul questions to hosted Jev, OpenRouter, OpenAI's Decisions API, laya and laya-mlx, or any sentence-transformers reranker, walking an ordered fallback chain when a backend errors or answers a Choice or Noul question below a configured confidence threshold (Score answers are not gated, since there is no single confidence number for them), and recording on each response which backend answered and why; it also ships a client class matching `typesafe_sdk.TypeSafeClient`'s constructor and `system_one` call for existing code, without `response_model` or the per-call overrides, and a `/v1/systemone` server their SDK parses unchanged.
 - [Clef-omni](https://runtimewire.com/article/cloudflare-clef-omni-multimodal-decision-model) - Competitor update: Cloudflare's decision model now takes text, images, audio and video in one request, and the cheaper Clef-flash tier had its price cut at the same time.
+- [Viorant JEV MCP](https://www.viorant.ai/jev) ![type: hosted](https://img.shields.io/badge/type-hosted-4B5563?style=flat-square) - Agent infrastructure: exposes hosted `Noul`, `Choice`, and ordered `Score` decisions through MCP, returning calibrated probabilities that clients can use to route, verify, screen, rank, or escalate; Viorant's Free Plan includes 2,500 one-time Vio Credits, theoretically enough for up to 25 million JEV input tokens when used exclusively for JEV.
 
 ### Game & Simulation
 
