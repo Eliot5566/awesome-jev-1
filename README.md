@@ -67,7 +67,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Scoring & Ranking](categories/scoring-ranking.md) — 43 entries
 - [Agent Decisions](categories/agent-decisions.md) — 62 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 10 entries
-- [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 42 entries
+- [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 43 entries
 - [Calibration & Research](categories/calibration-research.md) — 51 entries
 - [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 113 entries
 - [Game & Simulation](categories/game-simulation.md) — 26 entries
@@ -439,7 +439,7 @@ Source file: [`categories/evaluation-benchmarking.md`](categories/evaluation-ben
 - [classifier-bench](https://github.com/CMaintz/classifier-bench) ![stars](https://img.shields.io/github/stars/CMaintz/classifier-bench?style=flat-square&label=%E2%98%85) - Head-to-head speed: benchmarks Jev against OpenAI Decisions and an LLM over a frozen corpus of 2,321 labelled cases across 31 tasks, reporting latency and registry-priced cost, and running offline in dry-run mode without API keys.
 - [A Thermometer, Not an Analyst](https://alexvidovich.com/papers/text-judge) - Working paper: puts a text judge next to a live trading system only as a reader that never prescribes, and compares Jev with Claude as a blind headline judge behind six gates before either can act.
 - [Microsoft-Decision-1](https://commandline.microsoft.com/microsoft-decision-1-model-foundry/) - Competitor benchmark: Microsoft's hosted decision model claims the top accuracy across 36 benchmarks and uses 35x lower P50 latency than GPT-6 Sol, and flips its decision on only 1.3% of eight perturbation styles, in a post later updated to add Jev's accuracy and calibration numbers.
-- [Hafen](https://github.com/abhimanyupandian/hafen) - A clean and minimalist desktop tool to test your AI agents the way your users talk to them.
+- [Hafen](https://github.com/abhimanyupandian/hafen) ![stars](https://img.shields.io/github/stars/abhimanyupandian/hafen?style=flat-square&label=%E2%98%85) - A clean and minimalist desktop tool to test your AI agents the way your users talk to them.
 
 ### Calibration & Research
 
