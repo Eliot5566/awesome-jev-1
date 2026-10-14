@@ -61,15 +61,15 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Classification & Routing](categories/classification-routing.md) — 68 entries
+- [Classification & Routing](categories/classification-routing.md) — 69 entries
 - [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 11 entries
-- [Verification & Guardrails](categories/verification-guardrails.md) — 54 entries
+- [Verification & Guardrails](categories/verification-guardrails.md) — 56 entries
 - [Scoring & Ranking](categories/scoring-ranking.md) — 44 entries
 - [Agent Decisions](categories/agent-decisions.md) — 62 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 10 entries
-- [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 43 entries
+- [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 44 entries
 - [Calibration & Research](categories/calibration-research.md) — 53 entries
-- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 113 entries
+- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 114 entries
 - [Game & Simulation](categories/game-simulation.md) — 26 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 9 entries
 - [Finance & Trading](categories/finance-trading.md) — 8 entries
@@ -188,6 +188,7 @@ Source file: [`categories/classification-routing.md`](categories/classification-
 - [SAP S/4HANA procurement fraud](https://github.com/seccoit/sap-s4-antifraude-jev) ![stars](https://img.shields.io/github/stars/seccoit/sap-s4-antifraude-jev?style=flat-square&label=%E2%98%85) - ERP fraud: a proof of concept that flags suspicious purchase orders in SAP S/4HANA with a Jev classification.
 - [pi-gear-router](https://github.com/joslynSmall/pi-gear-router) ![agent: Pi](https://img.shields.io/badge/agent-Pi-8250DF?style=flat-square) ![stars](https://img.shields.io/github/stars/joslynSmall/pi-gear-router?style=flat-square&label=%E2%98%85) - Model routing: has Jev score each request from 0 to 2 and cuts that range into five bands that choose a three-gear model tier and a thinking level, so a bare "continue" is not mistaken for a new task.
 - [AgentConnect](https://github.com/agentconnect-md/agentconnect) ![agent: Multi](https://img.shields.io/badge/agent-Multi-1F6FEB?style=flat-square) ![type: self-hosted](https://img.shields.io/badge/type-self--hosted-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/agentconnect-md/agentconnect?style=flat-square&label=%E2%98%85) - Team agent platform: asks Jev a typed `Choice` once at session start, not per message, to pick which coding-agent runtime and model runs the session, then chains follow-up decisions and pins the winner behind a 5-second deadline that falls back to the agent's configured runtime.
+- [E-commerce after-sales agent](https://github.com/guow7394/ecom-cs-agent) ![stars](https://img.shields.io/github/stars/guow7394/ecom-cs-agent?style=flat-square&label=%E2%98%85) - Intent and escalation: asks Jev for an intent with a confidence and a separate needs-human answer in one call, after its own v1 finding that intent confidence measures which intent fits rather than whether the bot can handle the request.
 
 ### Adaptive & Realtime UI
 
@@ -263,6 +264,8 @@ Source file: [`categories/verification-guardrails.md`](categories/verification-g
 - [jev-unpack-hook](https://github.com/lucaminudel/jev-unpack-hook) ![agent: Multi](https://img.shields.io/badge/agent-Multi-1F6FEB?style=flat-square) ![stars](https://img.shields.io/github/stars/lucaminudel/jev-unpack-hook?style=flat-square&label=%E2%98%85) - A Jev System One hook for CodeX & Claude Code that detects overloaded multi-topic multi-ask agent messages and paces conversations one ask at a time, adding useful context and info.
 - [Lisa](https://github.com/turenlabs/lisa) ![stars](https://img.shields.io/github/stars/turenlabs/lisa?style=flat-square&label=%E2%98%85) - Code review: GitHub Action that asks Jev four `Noul` questions about each chunk of a pull request diff (adds a secret, introduces a vulnerability, adds unneeded complexity, tries to manipulate an AI reviewer) plus a `Noul` on whether look-alike files duplicate each other, failing the check at a configurable threshold (default 0.5) and commenting on the exact line, with repository-defined `Noul`, `Choice`, and `Score` questions in `.lisa.toml`.
 - [Using Jev in Domain Abuse Review](https://abtdomain.com/blog/2026/10/using-jev-in-domain-abuse-review-a-workflow-design/) - Production workflow: asks one `Noul` whether a domain name refers to a protected brand, keeping the TLD out of the input so it cannot skew the answer and scoring a second-level domain once even when it spreads across TLDs.
+- [jev-mail-triage](https://github.com/soderlind/jev-mail-triage) ![stars](https://img.shields.io/github/stars/soderlind/jev-mail-triage?style=flat-square&label=%E2%98%85) - Phishing triage: triages spam and phishing locally for Proton Mail Bridge, with an `evaluate --labels` mode that measures accuracy against labelled test emails.
+- [Document review with Unsiloed and Jev](https://www.unsiloed.ai/blog/document-review-unsiloed-typesafe-jev) - Document review: gates extracted fields with `Noul` questions and states the semantics the whole ecosystem depends on — a value of 0.04 is a 4% probability of yes, not a claim that Jev is 4% confident.
 
 ### Scoring & Ranking
 
@@ -442,6 +445,7 @@ Source file: [`categories/evaluation-benchmarking.md`](categories/evaluation-ben
 - [A Thermometer, Not an Analyst](https://alexvidovich.com/papers/text-judge) - Working paper: puts a text judge next to a live trading system only as a reader that never prescribes, and compares Jev with Claude as a blind headline judge behind six gates before either can act.
 - [Microsoft-Decision-1](https://commandline.microsoft.com/microsoft-decision-1-model-foundry/) - Competitor benchmark: Microsoft's hosted decision model claims the top accuracy across 36 benchmarks and uses 35x lower P50 latency than GPT-6 Sol, and flips its decision on only 1.3% of eight perturbation styles, in a post later updated to add Jev's accuracy and calibration numbers.
 - [Hafen](https://github.com/abhimanyupandian/hafen) ![stars](https://img.shields.io/github/stars/abhimanyupandian/hafen?style=flat-square&label=%E2%98%85) - A clean and minimalist desktop tool to test your AI agents the way your users talk to them.
+- [Jev vs Claude Haiku 4.5 as input guardrails](https://github.com/rahulbansalc6414/jev-as-a-guardrail) ![stars](https://img.shields.io/github/stars/rahulbansalc6414/jev-as-a-guardrail?style=flat-square&label=%E2%98%85) - Benchmark: compares the two as input guardrails on detection rate, false positive rate, latency and cost, over a documented prompt mix of 53% attack, 13% evasion and 33% benign, with duplicates removed.
 
 ### Calibration & Research
 
@@ -618,6 +622,7 @@ Source file: [`categories/infra-sdks-integrations.md`](categories/infra-sdks-int
 - [pydecide](https://github.com/gopaljigaur/decide) ![stars](https://img.shields.io/github/stars/gopaljigaur/decide?style=flat-square&label=%E2%98%85) - Python ecosystem: one client that sends the same typed Choice, Score and Noul questions to hosted Jev, OpenRouter, OpenAI's Decisions API, laya and laya-mlx, or any sentence-transformers reranker, walking an ordered fallback chain when a backend errors or answers a Choice or Noul question below a configured confidence threshold (Score answers are not gated, since there is no single confidence number for them), and recording on each response which backend answered and why; it also ships a client class matching `typesafe_sdk.TypeSafeClient`'s constructor and `system_one` call for existing code, without `response_model` or the per-call overrides, and a `/v1/systemone` server their SDK parses unchanged.
 - [Clef-omni](https://runtimewire.com/article/cloudflare-clef-omni-multimodal-decision-model) - Competitor update: Cloudflare's decision model now takes text, images, audio and video in one request, and the cheaper Clef-flash tier had its price cut at the same time.
 - [Viorant JEV MCP](https://www.viorant.ai/jev) ![type: hosted](https://img.shields.io/badge/type-hosted-4B5563?style=flat-square) - Agent infrastructure: exposes hosted `Noul`, `Choice`, and ordered `Score` decisions through MCP, returning calibrated probabilities that clients can use to route, verify, screen, rank, or escalate; Viorant's Free Plan includes 2,500 one-time Vio Credits, theoretically enough for up to 25 million JEV input tokens when used exclusively for JEV.
+- [llama.cpp support for decision models](https://github.com/ggml-org/llama.cpp/pull/30383) ![stars](https://img.shields.io/github/stars/ggml-org/llama.cpp?style=flat-square&label=%E2%98%85) - Runtime support: merged support for d3 decision models in llama.cpp, which puts the model class beside ordinary inference in one of the most widely deployed runtimes.
 
 ### Game & Simulation
 
