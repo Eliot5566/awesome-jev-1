@@ -68,7 +68,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Agent Decisions](categories/agent-decisions.md) — 62 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 10 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 44 entries
-- [Calibration & Research](categories/calibration-research.md) — 53 entries
+- [Calibration & Research](categories/calibration-research.md) — 54 entries
 - [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 114 entries
 - [Game & Simulation](categories/game-simulation.md) — 26 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 9 entries
@@ -504,6 +504,7 @@ Source file: [`categories/calibration-research.md`](categories/calibration-resea
 - [Gutsy](https://github.com/kouhxp/gutsy) ![stars](https://img.shields.io/github/stars/kouhxp/gutsy?style=flat-square&label=%E2%98%85) - Local decisions: an Apache-2.0 model that answers typed questions with calibrated probabilities on CPU, with no GPU and no hosted API.
 - [Phocinae Largha 150M](https://github.com/Phocinae/Phocinae-Largha-150M-v1) ![stars](https://img.shields.io/github/stars/Phocinae/Phocinae-Largha-150M-v1?style=flat-square&label=%E2%98%85) - Open model: a 144.3M-parameter bilingual (English/Chinese) typed decision model on mmBERT-small that returns calibrated `Choice`, `Score` and `Noul` probabilities in one forward pass so callers gate or escalate on the numbers; runs locally, 21.0 ms p50 per decision on an RTX 5090, with Apache-2.0 weights.
 - [Decision 3.0](https://www.reddit.com/r/LocalLLaMA/comments/1x3th4p/) - Open models: a multimodal decision-model family spanning 0.6B to 27B that reports ranking first on both Jev Decision Index boards.
+- [VideoJev](https://github.com/MCG-NJU/VideoJev) ![stars](https://img.shields.io/github/stars/MCG-NJU/VideoJev?style=flat-square&label=%E2%98%85) - Video understanding: Jev-inspired System One models score temporal membership and multiple-choice answers for several queries over one shared video prefix, then decode scores into intervals and selected answers without generating text.
 
 ### Infra / SDKs / Integrations
 
