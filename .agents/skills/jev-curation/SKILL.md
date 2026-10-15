@@ -35,6 +35,21 @@ An `agent` value also needs an evidence rule in `SUPPORT` in
 against their own text. The audit names any value it has no rule for, so add
 both in the same change.
 
+**Removing a value is not symmetric with adding one.** Adding a value only makes
+something available later; removing one silently orphans every entry whose text mentions
+it, because the audit cannot propose a tag for a value that no longer exists. That is
+what happened to `opencode`: it was removed on 2026-09-22 for a good reason — it had
+indeed entered from a misread — and `opencode-jev-compaction` then sat in the catalogue
+untaggable for nineteen days with nothing reporting it. So before deleting a value, run
+the check the audit cannot:
+
+```bash
+grep -ril "<value>" categories/ | sort
+```
+
+List what the removal would silence, and record both the removal and the orphans in the
+value's `$comment`, so the next person to consider deleting it sees the same list.
+
 ## Hard inclusion rules
 
 Only include items that satisfy at least one of these:
@@ -268,6 +283,7 @@ When a contributor opens a PR:
 Keep a PR reply short: the rule in one line, what happens next in one line, then stop. No restating the contributor's work, no explaining the queue's arithmetic, no advice they did not ask for. 4. **Bulk AI-generated submissions are a rule, not a preference** (CONTRIBUTING → "Rule: do not submit bulk drops of AI-generated projects"). Before merging a cluster of same-author, same-day repositories, check for a shared scaffold (`AGENTS.md` / `CLAUDE.md` / `STATE.md`), a common README template, or single-commit histories — those mark one project family, which counts as **one** submission, so merge at most one and queue the rest. Disclose-or-pause also applies: if a submission was generated and not disclosed, hold the author's whole pending batch until they say so.
 5. Never edit a contributor's wording purely for style; do fix inaccurate claims.
 6. README.md is generated — when a PR conflicts there, rebase the branch and regenerate it (`python3 scripts/build-readme.py`) rather than hand-resolving. For conflicts in a category file, keep main's version and append the PR's new line.
+8. **A PR that rewrites an existing entry deserves more scrutiny than one that adds a new one**, not less. The contributor usually knows the project better than the catalogue does. Rule 6 in the closing list below came from exactly this: `jev-chat` had long said the Android service reads "WeChat, QQ, X, or Feishu", a contributor changed it to "QQ, X, Feishu/Lark or WhatsApp", and a file count settled it - zero files mentioning wechat or weixin, forty-five mentioning whatsapp. The catalogue had been wrong for an unknown number of rounds, and the sweep posts repeated it.
 7. An entry written **only** into `README.md` (no category file) will be silently erased by the next generator run — the merge is clean, CI is green, the count is unchanged, and the entry is gone. Do **not** close the PR and apply it to main by hand: that shows the contributor a closed-unmerged PR and puts their contribution on your commits. Put the line into the right category **on the PR branch** and merge the PR:
    ```bash
    RELOCATE_INTO=infra-sdks-integrations.md scripts/maintainer/merge-prs.sh <PR>
