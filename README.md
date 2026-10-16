@@ -61,7 +61,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Classification & Routing](categories/classification-routing.md) — 69 entries
+- [Classification & Routing](categories/classification-routing.md) — 70 entries
 - [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 11 entries
 - [Verification & Guardrails](categories/verification-guardrails.md) — 56 entries
 - [Scoring & Ranking](categories/scoring-ranking.md) — 44 entries
@@ -69,9 +69,9 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 10 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 44 entries
 - [Calibration & Research](categories/calibration-research.md) — 54 entries
-- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 114 entries
+- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 115 entries
 - [Game & Simulation](categories/game-simulation.md) — 26 entries
-- [Robotics & Physical](categories/robotics-physical.md) — 9 entries
+- [Robotics & Physical](categories/robotics-physical.md) — 10 entries
 - [Finance & Trading](categories/finance-trading.md) — 8 entries
 - [Compliance & Legal](categories/compliance-legal.md) — 2 entries
 - [Content Moderation](categories/content-moderation.md) — 11 entries
@@ -189,6 +189,7 @@ Source file: [`categories/classification-routing.md`](categories/classification-
 - [pi-gear-router](https://github.com/joslynSmall/pi-gear-router) ![agent: Pi](https://img.shields.io/badge/agent-Pi-8250DF?style=flat-square) ![stars](https://img.shields.io/github/stars/joslynSmall/pi-gear-router?style=flat-square&label=%E2%98%85) - Model routing: has Jev score each request from 0 to 2 and cuts that range into five bands that choose a three-gear model tier and a thinking level, so a bare "continue" is not mistaken for a new task.
 - [AgentConnect](https://github.com/agentconnect-md/agentconnect) ![agent: Multi](https://img.shields.io/badge/agent-Multi-1F6FEB?style=flat-square) ![type: self-hosted](https://img.shields.io/badge/type-self--hosted-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/agentconnect-md/agentconnect?style=flat-square&label=%E2%98%85) - Team agent platform: asks Jev a typed `Choice` once at session start, not per message, to pick which coding-agent runtime and model runs the session, then chains follow-up decisions and pins the winner behind a 5-second deadline that falls back to the agent's configured runtime.
 - [E-commerce after-sales agent](https://github.com/guow7394/ecom-cs-agent) ![stars](https://img.shields.io/github/stars/guow7394/ecom-cs-agent?style=flat-square&label=%E2%98%85) - Intent and escalation: asks Jev for an intent with a confidence and a separate needs-human answer in one call, after its own v1 finding that intent confidence measures which intent fits rather than whether the bot can handle the request.
+- [System1 Thinking](https://github.com/trungnt13/claude-system1) ![stars](https://img.shields.io/github/stars/trungnt13/claude-system1?style=flat-square&label=%E2%98%85) - Effort routing: has Jev choose Claude Code's reasoning effort before selected model requests, so the thinking budget is set per request instead of the user picking a level and living with it.
 
 ### Adaptive & Realtime UI
 
@@ -624,6 +625,7 @@ Source file: [`categories/infra-sdks-integrations.md`](categories/infra-sdks-int
 - [Clef-omni](https://runtimewire.com/article/cloudflare-clef-omni-multimodal-decision-model) - Competitor update: Cloudflare's decision model now takes text, images, audio and video in one request, and the cheaper Clef-flash tier had its price cut at the same time.
 - [Viorant JEV MCP](https://www.viorant.ai/jev) ![type: hosted](https://img.shields.io/badge/type-hosted-4B5563?style=flat-square) - Agent infrastructure: exposes hosted `Noul`, `Choice`, and ordered `Score` decisions through MCP, returning calibrated probabilities that clients can use to route, verify, screen, rank, or escalate; Viorant's Free Plan includes 2,500 one-time Vio Credits, theoretically enough for up to 25 million JEV input tokens when used exclusively for JEV.
 - [llama.cpp support for decision models](https://github.com/ggml-org/llama.cpp/pull/30383) ![stars](https://img.shields.io/github/stars/ggml-org/llama.cpp?style=flat-square&label=%E2%98%85) - Runtime support: merged support for d3 decision models in llama.cpp, which puts the model class beside ordinary inference in one of the most widely deployed runtimes.
+- [Jev Proxy Pool](https://github.com/left0ver/jev-proxy-pool) ![stars](https://img.shields.io/github/stars/left0ver/jev-proxy-pool?style=flat-square&label=%E2%98%85) - Operations: a rotating Jev API key pool with a web admin panel, the unglamorous infrastructure a shared deployment needs once more than one person uses it.
 
 ### Game & Simulation
 
@@ -669,6 +671,7 @@ Source file: [`categories/robotics-physical.md`](categories/robotics-physical.md
 - [RoboJEV](https://github.com/lykycy123/RoboJEV) ![stars](https://img.shields.io/github/stars/lykycy123/RoboJEV?style=flat-square&label=%E2%98%85) - Robotics simulation: uses two-stage Jev `Choice` decisions over structured state to select intent and Cartesian motion/gripper commands for a Franka Panda in MuJoCo, rejecting malformed responses and checking task success independently through physics.
 - [Jev for Physical AI](https://github.com/robokrunch/jev-physical-ai) ![stars](https://img.shields.io/github/stars/robokrunch/jev-physical-ai?style=flat-square&label=%E2%98%85) - Fleet triage: runs Jev as the decision layer for a 10,000-robot warehouse fleet over 41 bilingual incident templates and publishes 0.527 s p50 latency, $24.57 per million decisions and 91.3% agreement with template labels, alongside a crossover against a self-hosted ModernBERT.
 - [EmbodiedJev](https://github.com/FBddcz/embodied-jev) ![stars](https://img.shields.io/github/stars/FBddcz/embodied-jev?style=flat-square&label=%E2%98%85) - Embodied robotics: MuJoCo decision workbench for a Franka Panda arm that compares TypeSafe Jev System One candidate decisions against reactive baselines and LLMs across pick, place, and obstacle tasks.
+- [SiteEye](https://github.com/seominpapa/siteeye) ![stars](https://img.shields.io/github/stars/seominpapa/siteeye?style=flat-square&label=%E2%98%85) - Construction safety: predicts near-misses on a construction site from YOLO vision feeding a Jev decision layer, carrying the verdict into a domain where the failure mode is a physical injury.
 
 ### Finance & Trading
 
