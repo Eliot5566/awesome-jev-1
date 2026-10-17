@@ -61,13 +61,13 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Classification & Routing](categories/classification-routing.md) — 71 entries
+- [Classification & Routing](categories/classification-routing.md) — 72 entries
 - [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 11 entries
 - [Verification & Guardrails](categories/verification-guardrails.md) — 56 entries
 - [Scoring & Ranking](categories/scoring-ranking.md) — 44 entries
 - [Agent Decisions](categories/agent-decisions.md) — 62 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 11 entries
-- [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 44 entries
+- [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 45 entries
 - [Calibration & Research](categories/calibration-research.md) — 54 entries
 - [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 117 entries
 - [Game & Simulation](categories/game-simulation.md) — 26 entries
@@ -192,6 +192,7 @@ Source file: [`categories/classification-routing.md`](categories/classification-
 - [AgentConnect](https://github.com/agentconnect-md/agentconnect) ![agent: Multi](https://img.shields.io/badge/agent-Multi-1F6FEB?style=flat-square) ![type: self-hosted](https://img.shields.io/badge/type-self--hosted-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/agentconnect-md/agentconnect?style=flat-square&label=%E2%98%85) - Team agent platform: asks Jev a typed `Choice` once at session start, not per message, to pick which coding-agent runtime and model runs the session, then chains follow-up decisions and pins the winner behind a 5-second deadline that falls back to the agent's configured runtime.
 - [E-commerce after-sales agent](https://github.com/guow7394/ecom-cs-agent) ![stars](https://img.shields.io/github/stars/guow7394/ecom-cs-agent?style=flat-square&label=%E2%98%85) - Intent and escalation: asks Jev for an intent with a confidence and a separate needs-human answer in one call, after its own v1 finding that intent confidence measures which intent fits rather than whether the bot can handle the request.
 - [System1 Thinking](https://github.com/trungnt13/claude-system1) ![agent: Claude Code](https://img.shields.io/badge/agent-Claude%20Code-C1512C?style=flat-square) ![stars](https://img.shields.io/github/stars/trungnt13/claude-system1?style=flat-square&label=%E2%98%85) - Effort routing: has Jev choose Claude Code's reasoning effort before selected model requests, so the thinking budget is set per request instead of the user picking a level and living with it.
+- [TypeSafe Jev x Salesforce](https://github.com/divingsbysangam/typesafe-jev-salesforce) ![stars](https://img.shields.io/github/stars/divingsbysangam/typesafe-jev-salesforce?style=flat-square&label=%E2%98%85) - Case triage: a working Salesforce DX project that puts a typed decision model inside Apex instead of a generative LLM, so every new Service Cloud case is classified, scored and routed by answers that are numbers rather than prose.
 
 ### Adaptive & Realtime UI
 
@@ -450,6 +451,7 @@ Source file: [`categories/evaluation-benchmarking.md`](categories/evaluation-ben
 - [Microsoft-Decision-1](https://commandline.microsoft.com/microsoft-decision-1-model-foundry/) - Competitor benchmark: Microsoft's hosted decision model claims the top accuracy across 36 benchmarks and uses 35x lower P50 latency than GPT-6 Sol, and flips its decision on only 1.3% of eight perturbation styles, in a post later updated to add Jev's accuracy and calibration numbers.
 - [Hafen](https://github.com/abhimanyupandian/hafen) ![stars](https://img.shields.io/github/stars/abhimanyupandian/hafen?style=flat-square&label=%E2%98%85) - A clean and minimalist desktop tool to test your AI agents the way your users talk to them.
 - [Jev vs Claude Haiku 4.5 as input guardrails](https://github.com/rahulbansalc6414/jev-as-a-guardrail) ![stars](https://img.shields.io/github/stars/rahulbansalc6414/jev-as-a-guardrail?style=flat-square&label=%E2%98%85) - Benchmark: compares the two as input guardrails on detection rate, false positive rate, latency and cost, over a documented prompt mix of 53% attack, 13% evasion and 33% benign, with duplicates removed.
+- [Decision Models as Guardrails](https://github.com/raxITlabs/decision-models-as-guardrails) ![stars](https://img.shields.io/github/stars/raxITlabs/decision-models-as-guardrails?style=flat-square&label=%E2%98%85) - Guardrail benchmark: asks whether a decision model can replace a managed guardrail service, sending the same labelled rows to Jev, Kev, Open-Jev, Laya, Clef and Strands Decider, to the Perplexity and OpenAI Decisions APIs, and to Bedrock Guardrails, then comparing accuracy against cost.
 
 ### Calibration & Research
 
