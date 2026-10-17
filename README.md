@@ -69,7 +69,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 11 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 44 entries
 - [Calibration & Research](categories/calibration-research.md) — 54 entries
-- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 115 entries
+- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 116 entries
 - [Game & Simulation](categories/game-simulation.md) — 26 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 10 entries
 - [Finance & Trading](categories/finance-trading.md) — 8 entries
@@ -629,6 +629,7 @@ Source file: [`categories/infra-sdks-integrations.md`](categories/infra-sdks-int
 - [Viorant JEV MCP](https://www.viorant.ai/jev) ![type: hosted](https://img.shields.io/badge/type-hosted-4B5563?style=flat-square) - Agent infrastructure: exposes hosted `Noul`, `Choice`, and ordered `Score` decisions through MCP, returning calibrated probabilities that clients can use to route, verify, screen, rank, or escalate; Viorant's Free Plan includes 2,500 one-time Vio Credits, theoretically enough for up to 25 million JEV input tokens when used exclusively for JEV.
 - [llama.cpp support for decision models](https://github.com/ggml-org/llama.cpp/pull/30383) ![stars](https://img.shields.io/github/stars/ggml-org/llama.cpp?style=flat-square&label=%E2%98%85) - Runtime support: merged support for d3 decision models in llama.cpp, which puts the model class beside ordinary inference in one of the most widely deployed runtimes.
 - [Jev Proxy Pool](https://github.com/left0ver/jev-proxy-pool) ![stars](https://img.shields.io/github/stars/left0ver/jev-proxy-pool?style=flat-square&label=%E2%98%85) - Operations: a rotating Jev API key pool with a web admin panel, the unglamorous infrastructure a shared deployment needs once more than one person uses it.
+- [Decision Models](https://decisionmodels.io) ![type: hosted](https://img.shields.io/badge/type-hosted-4B5563?style=flat-square) - Hosted API: Jev-compatible `POST /v1/systemone` serving open decision models (vLLM-SR d3, Blink, Quyet) for `Choice`, `Score` and `Noul` questions, with an EU tier and a Peer-to-Peer tier, from $0.019 per 1M input tokens with output free.
 
 ### Game & Simulation
 
