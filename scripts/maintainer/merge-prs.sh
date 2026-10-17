@@ -98,10 +98,27 @@ green_branch_first() {
     if git push -q "$remote" "$tmp:$branch" --force-with-lease 2>/dev/null; then
       info "已把 README 补建推回分支（合并提交将落地即绿）"
     else
-      # 贡献者没开 maintainerCanModify 时推不回去。此时合并提交必然因 README 落后而变红，
-      # 只能合并后在 main 上补（返回值通知调用方走后置补建）。
-      info "⚠ README 补建推不回 fork（贡献者未开 maintainer 编辑权限），改为合并后在 main 上补"
-      ok=1
+        # 贡献者没开 maintainerCanModify 时推不回去。旧做法是「先在 main 上合并、再补 README」，
+        # 但那样合并提交本身必然红（分类文件已变、README 还落后），main 历史里每个这类 PR
+        # 都留一个红叉，再由 sync_readme 的后续提交补绿。
+        # 现在改成：本地直接合并这个【已含 README 补建提交】的分支 —— 合并提交进去就是绿的，
+        # PR 也会被 GitHub 认作已合并（合并信息与 gh pr merge 同款）。
+        info "⚠ README 补建推不回 fork（贡献者未开 maintainer 编辑权限），改走本地合并"
+        git checkout -q main 2>/dev/null || return 1
+        git fetch -q origin main 2>/dev/null
+        git merge -q --ff-only origin/main 2>/dev/null || git reset -q --hard origin/main
+        if git merge --no-ff --no-edit -m "Merge pull request #$n from $fork" "$tmp" >/dev/null 2>&1; then
+          if git push -q origin main 2>/dev/null; then
+            info "✓ 已本地合并并推送（合并提交为绿，PR 会显示为已合并）"
+            git branch -q -D "$tmp" 2>/dev/null
+            return 2
+          fi
+          info "✗ 推送 main 失败，已回滚该 PR"
+          git reset -q --hard origin/main 2>/dev/null
+        else
+          info "✗ 本地合并失败（冲突），已中止该 PR"
+          git merge --abort >/dev/null 2>&1
+        fi
     fi
   fi
   git checkout -q main 2>/dev/null
@@ -426,7 +443,9 @@ for n in "${PRS[@]}"; do
   if [ "$mutate" = 0 ]; then info "已跳过 #$n（未合并）"; continue; fi
 
   if wait_mergeable "$n"; then
-    if green_branch_first "$n" "$fork" "$branch"; then prepped=1; else prepped=0; fi
+    green_branch_first "$n" "$fork" "$branch"; gb=$?
+    if [ "$gb" = 2 ]; then info "· 该 PR 已在上一步本地合并，跳过正常合并路径"; sync_main; continue; fi
+    if [ "$gb" = 0 ]; then prepped=1; else prepped=0; fi
     if gh pr merge "$n" --merge --subject "Merge pull request #$n from $fork" >/dev/null 2>&1; then
       if [ "$prepped" = 1 ]; then
         info "✓ 直接合并（分支已自洽，合并提交为绿）"
