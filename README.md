@@ -72,7 +72,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 117 entries
 - [Game & Simulation](categories/game-simulation.md) — 26 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 10 entries
-- [Finance & Trading](categories/finance-trading.md) — 8 entries
+- [Finance & Trading](categories/finance-trading.md) — 9 entries
 - [Compliance & Legal](categories/compliance-legal.md) — 2 entries
 - [Content Moderation](categories/content-moderation.md) — 11 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 105 entries
@@ -692,6 +692,7 @@ Source file: [`categories/finance-trading.md`](categories/finance-trading.md)
 - [jev-trader](https://github.com/jarrodwatts/jev-trader) ![stars](https://img.shields.io/github/stars/jarrodwatts/jev-trader?style=flat-square&label=%E2%98%85) - Trading: watches the Kuru MON-USDC book on Monad and asks Jev for a `Choice` between buy and sell every block, publishing 81 ms decision latency and $0.000004 of Jev cost per call from a live dry run.
 - [ai-hedge-fund](https://github.com/virattt/ai-hedge-fund) ![stars](https://img.shields.io/github/stars/virattt/ai-hedge-fund?style=flat-square&label=%E2%98%85) - Quantitative finance: multi-agent AI hedge fund trading system featuring native JevLLM integration to execute fast typed decisions without parsing fragility.
 - [Polymarket BTC 5m Jev trader](https://github.com/VGabriel45/polymarket-btc5m-jev-trading) ![stars](https://img.shields.io/github/stars/VGabriel45/polymarket-btc5m-jev-trading?style=flat-square&label=%E2%98%85) - Prediction markets: a trading agent for Polymarket's five-minute BTC up/down markets that puts Jev in the decision layer behind a terminal UI.
+- [sec-8k-filings-and-decision-models](https://github.com/magilliam27/sec-8k-filings-and-decision-models) - Finance research: asks one five-option Jev Choice how good or bad each of 26,962 S&P 500 8-K filings is for shareholders, and finds the probability-weighted rating has a rank correlation of +0.025 (95% interval +0.015 to +0.034) with the next two days' market-adjusted return.
 
 ### Compliance & Legal
 
