@@ -61,7 +61,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Classification & Routing](categories/classification-routing.md) — 72 entries
+- [Classification & Routing](categories/classification-routing.md) — 73 entries
 - [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 11 entries
 - [Verification & Guardrails](categories/verification-guardrails.md) — 57 entries
 - [Scoring & Ranking](categories/scoring-ranking.md) — 44 entries
@@ -69,7 +69,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 11 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 45 entries
 - [Calibration & Research](categories/calibration-research.md) — 54 entries
-- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 117 entries
+- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 118 entries
 - [Game & Simulation](categories/game-simulation.md) — 26 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 10 entries
 - [Finance & Trading](categories/finance-trading.md) — 9 entries
@@ -193,6 +193,7 @@ Source file: [`categories/classification-routing.md`](categories/classification-
 - [E-commerce after-sales agent](https://github.com/guow7394/ecom-cs-agent) ![stars](https://img.shields.io/github/stars/guow7394/ecom-cs-agent?style=flat-square&label=%E2%98%85) - Intent and escalation: asks Jev for an intent with a confidence and a separate needs-human answer in one call, after its own v1 finding that intent confidence measures which intent fits rather than whether the bot can handle the request.
 - [System1 Thinking](https://github.com/trungnt13/claude-system1) ![agent: Claude Code](https://img.shields.io/badge/agent-Claude%20Code-C1512C?style=flat-square) ![stars](https://img.shields.io/github/stars/trungnt13/claude-system1?style=flat-square&label=%E2%98%85) - Effort routing: has Jev choose Claude Code's reasoning effort before selected model requests, so the thinking budget is set per request instead of the user picking a level and living with it.
 - [TypeSafe Jev x Salesforce](https://github.com/divingsbysangam/typesafe-jev-salesforce) ![stars](https://img.shields.io/github/stars/divingsbysangam/typesafe-jev-salesforce?style=flat-square&label=%E2%98%85) - Case triage: a working Salesforce DX project that puts a typed decision model inside Apex instead of a generative LLM, so every new Service Cloud case is classified, scored and routed by answers that are numbers rather than prose.
+- [vd-jev](https://github.com/ondata/vd-jev) ![stars](https://img.shields.io/github/stars/ondata/vd-jev?style=flat-square&label=%E2%98%85) - Data inspection: a VisiData plugin that asks one closed question about every row of a chosen text column, turning free text in a spreadsheet into a column of typed answers without leaving the viewer.
 
 ### Adaptive & Realtime UI
 
@@ -634,6 +635,7 @@ Source file: [`categories/infra-sdks-integrations.md`](categories/infra-sdks-int
 - [llama.cpp support for decision models](https://github.com/ggml-org/llama.cpp/pull/30383) ![stars](https://img.shields.io/github/stars/ggml-org/llama.cpp?style=flat-square&label=%E2%98%85) - Runtime support: merged support for d3 decision models in llama.cpp, which puts the model class beside ordinary inference in one of the most widely deployed runtimes.
 - [Jev Proxy Pool](https://github.com/left0ver/jev-proxy-pool) ![stars](https://img.shields.io/github/stars/left0ver/jev-proxy-pool?style=flat-square&label=%E2%98%85) - Operations: a rotating Jev API key pool with a web admin panel, the unglamorous infrastructure a shared deployment needs once more than one person uses it.
 - [Decision Models](https://decisionmodels.io) ![type: hosted](https://img.shields.io/badge/type-hosted-4B5563?style=flat-square) - Hosted API: Jev-compatible `POST /v1/systemone` serving open decision models (vLLM-SR d3, Blink, Quyet) for `Choice`, `Score` and `Noul` questions, with an EU tier and a Peer-to-Peer tier, from $0.019 per 1M input tokens with output free.
+- [tsjev for DuckDB](https://github.com/Querio-App/duckdb-jev) ![stars](https://img.shields.io/github/stars/Querio-App/duckdb-jev?style=flat-square&label=%E2%98%85) - SQL extension: labels, filters and scores DuckDB rows with Jev from inside a query, so a `tsjev_label(body, ['billing', 'bug', 'feature request', 'other'])` column plus a `GROUP BY` replaces an export-and-classify round trip.
 
 ### Game & Simulation
 
