@@ -61,7 +61,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Classification & Routing](categories/classification-routing.md) — 73 entries
+- [Classification & Routing](categories/classification-routing.md) — 74 entries
 - [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 11 entries
 - [Verification & Guardrails](categories/verification-guardrails.md) — 57 entries
 - [Scoring & Ranking](categories/scoring-ranking.md) — 44 entries
@@ -72,7 +72,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 118 entries
 - [Game & Simulation](categories/game-simulation.md) — 26 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 10 entries
-- [Finance & Trading](categories/finance-trading.md) — 9 entries
+- [Finance & Trading](categories/finance-trading.md) — 10 entries
 - [Compliance & Legal](categories/compliance-legal.md) — 2 entries
 - [Content Moderation](categories/content-moderation.md) — 11 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 105 entries
@@ -194,6 +194,7 @@ Source file: [`categories/classification-routing.md`](categories/classification-
 - [System1 Thinking](https://github.com/trungnt13/claude-system1) ![agent: Claude Code](https://img.shields.io/badge/agent-Claude%20Code-C1512C?style=flat-square) ![stars](https://img.shields.io/github/stars/trungnt13/claude-system1?style=flat-square&label=%E2%98%85) - Effort routing: has Jev choose Claude Code's reasoning effort before selected model requests, so the thinking budget is set per request instead of the user picking a level and living with it.
 - [TypeSafe Jev x Salesforce](https://github.com/divingsbysangam/typesafe-jev-salesforce) ![stars](https://img.shields.io/github/stars/divingsbysangam/typesafe-jev-salesforce?style=flat-square&label=%E2%98%85) - Case triage: a working Salesforce DX project that puts a typed decision model inside Apex instead of a generative LLM, so every new Service Cloud case is classified, scored and routed by answers that are numbers rather than prose.
 - [vd-jev](https://github.com/ondata/vd-jev) ![stars](https://img.shields.io/github/stars/ondata/vd-jev?style=flat-square&label=%E2%98%85) - Data inspection: a VisiData plugin that asks one closed question about every row of a chosen text column, turning free text in a spreadsheet into a column of typed answers without leaving the viewer.
+- [X Reply Judge](https://github.com/liaocaoxuezhe/x-reply-judge-jev) ![stars](https://img.shields.io/github/stars/liaocaoxuezhe/x-reply-judge-jev?style=flat-square&label=%E2%98%85) - AI-text labelling: a Chrome extension that puts one badge on every X post showing the probability Jev assigns to the text being AI-written, with stated colour cutoffs at 70 and 31 and no explanation list at all.
 
 ### Adaptive & Realtime UI
 
@@ -696,6 +697,7 @@ Source file: [`categories/finance-trading.md`](categories/finance-trading.md)
 - [ai-hedge-fund](https://github.com/virattt/ai-hedge-fund) ![stars](https://img.shields.io/github/stars/virattt/ai-hedge-fund?style=flat-square&label=%E2%98%85) - Quantitative finance: multi-agent AI hedge fund trading system featuring native JevLLM integration to execute fast typed decisions without parsing fragility.
 - [Polymarket BTC 5m Jev trader](https://github.com/VGabriel45/polymarket-btc5m-jev-trading) ![stars](https://img.shields.io/github/stars/VGabriel45/polymarket-btc5m-jev-trading?style=flat-square&label=%E2%98%85) - Prediction markets: a trading agent for Polymarket's five-minute BTC up/down markets that puts Jev in the decision layer behind a terminal UI.
 - [sec-8k-filings-and-decision-models](https://github.com/magilliam27/sec-8k-filings-and-decision-models) ![stars](https://img.shields.io/github/stars/magilliam27/sec-8k-filings-and-decision-models?style=flat-square&label=%E2%98%85) - Finance research: asks one five-option Jev Choice how good or bad each of 26,962 S&P 500 8-K filings is for shareholders, and finds the probability-weighted rating has a rank correlation of +0.025 (95% interval +0.015 to +0.034) with the next two days' market-adjusted return.
+- [JEV Trading Command Center](https://github.com/mars-tw/jev-trading-command-center) ![stars](https://img.shields.io/github/stars/mars-tw/jev-trading-command-center?style=flat-square&label=%E2%98%85) - Paper trading: a research app where Jev decisions drive a simulated broker, with no exchange order routing at all, so the decisions can be studied without risking anything real.
 
 ### Compliance & Legal
 
