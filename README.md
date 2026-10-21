@@ -61,7 +61,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Classification & Routing](categories/classification-routing.md) — 74 entries
+- [Classification & Routing](categories/classification-routing.md) — 75 entries
 - [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 11 entries
 - [Verification & Guardrails](categories/verification-guardrails.md) — 57 entries
 - [Scoring & Ranking](categories/scoring-ranking.md) — 44 entries
@@ -74,7 +74,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Robotics & Physical](categories/robotics-physical.md) — 10 entries
 - [Finance & Trading](categories/finance-trading.md) — 10 entries
 - [Compliance & Legal](categories/compliance-legal.md) — 2 entries
-- [Content Moderation](categories/content-moderation.md) — 11 entries
+- [Content Moderation](categories/content-moderation.md) — 12 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 105 entries
 
 ### Open categories still being seeded
@@ -195,6 +195,7 @@ Source file: [`categories/classification-routing.md`](categories/classification-
 - [TypeSafe Jev x Salesforce](https://github.com/divingsbysangam/typesafe-jev-salesforce) ![stars](https://img.shields.io/github/stars/divingsbysangam/typesafe-jev-salesforce?style=flat-square&label=%E2%98%85) - Case triage: a working Salesforce DX project that puts a typed decision model inside Apex instead of a generative LLM, so every new Service Cloud case is classified, scored and routed by answers that are numbers rather than prose.
 - [vd-jev](https://github.com/ondata/vd-jev) ![stars](https://img.shields.io/github/stars/ondata/vd-jev?style=flat-square&label=%E2%98%85) - Data inspection: a VisiData plugin that asks one closed question about every row of a chosen text column, turning free text in a spreadsheet into a column of typed answers without leaving the viewer.
 - [X Reply Judge](https://github.com/liaocaoxuezhe/x-reply-judge-jev) ![stars](https://img.shields.io/github/stars/liaocaoxuezhe/x-reply-judge-jev?style=flat-square&label=%E2%98%85) - AI-text labelling: a Chrome extension that puts one badge on every X post showing the probability Jev assigns to the text being AI-written, with stated colour cutoffs at 70 and 31 and no explanation list at all.
+- [Trio-Spark Ticket Rush](https://github.com/machinefi/trio-spark/tree/main/demos/ticket-rush) ![stars](https://img.shields.io/github/stars/machinefi/trio-spark?style=flat-square&label=%E2%98%85) - Support triage: sends each of 1,000 support tickets to the System One-compatible Trio-Spark API as one `choice` over eight team queues and routes any ticket whose top probability is below 0.6 to human review instead.
 
 ### Adaptive & Realtime UI
 
@@ -721,6 +722,7 @@ Source file: [`categories/content-moderation.md`](categories/content-moderation.
 - [Rot Guard](https://github.com/plusminushalf/rot-guard) ![type: extension](https://img.shields.io/badge/type-extension-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/plusminushalf/rot-guard?style=flat-square&label=%E2%98%85) - Digital wellbeing: bring-your-own-key Chrome extension that asks Jev a content-category `Choice`, a `Noul` on whether the page serves the user's written goals and a 0–4 waste-of-time `Score` for every YouTube video, X, Reddit or LinkedIn page and article, plus a `Choice` and `Noul` per X post and YouTube tile in batches of 10, then blocks or collapses in code with thresholds that tighten at 2, 10 and 20 minutes of engaged time, and grades a one-shot appeal with three `Noul`s that earn 15 minutes or lock the page until midnight.
 - [social-risk-qwen-jev](https://github.com/TianJinWeiBoss520/social-risk-qwen-jev) ![stars](https://img.shields.io/github/stars/TianJinWeiBoss520/social-risk-qwen-jev?style=flat-square&label=%E2%98%85) - Chinese moderation: pairs a Qwen3-VL LoRA with a Jev decision model to judge multimodal social-risk content.
 - [HN Jev Sorter](https://github.com/ritza-co/hn-jev-sorter) ![stars](https://img.shields.io/github/stars/ritza-co/hn-jev-sorter?style=flat-square&label=%E2%98%85) - Reading aid: a Chrome extension that sorts Hacker News comments into buckets you choose while you read, with Jev classifying each comment in about a second.
+- [Trio-Spark Comment Bouncer](https://github.com/machinefi/trio-spark/tree/main/demos/comment-bouncer) ![stars](https://img.shields.io/github/stars/machinefi/trio-spark?style=flat-square&label=%E2%98%85) - Comment moderation: asks the System One-compatible Trio-Spark API one show/hide `choice` per live-chat comment, then two adjustable thresholds show, send to review or auto-hide each comment from the stored P(hide) without calling the model again.
 
 ### Related Practices / Discussions
 
