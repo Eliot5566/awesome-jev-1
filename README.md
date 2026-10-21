@@ -62,8 +62,8 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 ## Current coverage
 
 - [Classification & Routing](categories/classification-routing.md) — 75 entries
-- [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 11 entries
-- [Verification & Guardrails](categories/verification-guardrails.md) — 57 entries
+- [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 12 entries
+- [Verification & Guardrails](categories/verification-guardrails.md) — 58 entries
 - [Scoring & Ranking](categories/scoring-ranking.md) — 44 entries
 - [Agent Decisions](categories/agent-decisions.md) — 62 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 11 entries
@@ -71,7 +71,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Calibration & Research](categories/calibration-research.md) — 54 entries
 - [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 118 entries
 - [Game & Simulation](categories/game-simulation.md) — 26 entries
-- [Robotics & Physical](categories/robotics-physical.md) — 10 entries
+- [Robotics & Physical](categories/robotics-physical.md) — 11 entries
 - [Finance & Trading](categories/finance-trading.md) — 10 entries
 - [Compliance & Legal](categories/compliance-legal.md) — 2 entries
 - [Content Moderation](categories/content-moderation.md) — 12 entries
@@ -212,6 +212,7 @@ Source file: [`categories/adaptive-realtime-ui.md`](categories/adaptive-realtime
 - [shapeshift](https://github.com/anishfn/shapeshift) ![stars](https://img.shields.io/github/stars/anishfn/shapeshift?style=flat-square&label=%E2%98%85) - Input: one text box that morphs into the right UI as you type, asking Jev which control the sentence calls for, and running offline.
 - [Jevcast](https://github.com/RyanErkal/jevcast) ![stars](https://img.shields.io/github/stars/RyanErkal/jevcast?style=flat-square&label=%E2%98%85) - Desktop productivity: native macOS launcher and window manager that uses Jev to match natural-language window and action commands to known application workflows with local response caching.
 - [Laser](https://github.com/iYassr/omarchy-laser) ![stars](https://img.shields.io/github/stars/iYassr/omarchy-laser?style=flat-square&label=%E2%98%85) - Focus mode: blocks distractions on an Omarchy/Hyprland desktop, using Jev to decide what to block.
+- [Photo Ferret](https://github.com/JonesSteven/photo-ferret) ![stars](https://img.shields.io/github/stars/JonesSteven/photo-ferret?style=flat-square&label=%E2%98%85) - Browsable ratings: an image model scores every photo on dozens of scales and the gallery is browsed with sliders instead of tags, demoed live over about 2,800 nature photographs.
 
 ### Verification & Guardrails
 
@@ -274,6 +275,7 @@ Source file: [`categories/verification-guardrails.md`](categories/verification-g
 - [Using Jev in Domain Abuse Review](https://abtdomain.com/blog/2026/10/using-jev-in-domain-abuse-review-a-workflow-design/) - Production workflow: asks one `Noul` whether a domain name refers to a protected brand, keeping the TLD out of the input so it cannot skew the answer and scoring a second-level domain once even when it spreads across TLDs.
 - [jev-mail-triage](https://github.com/soderlind/jev-mail-triage) ![stars](https://img.shields.io/github/stars/soderlind/jev-mail-triage?style=flat-square&label=%E2%98%85) - Phishing triage: triages spam and phishing locally for Proton Mail Bridge, with an `evaluate --labels` mode that measures accuracy against labelled test emails.
 - [Document review with Unsiloed and Jev](https://www.unsiloed.ai/blog/document-review-unsiloed-typesafe-jev) - Document review: gates extracted fields with `Noul` questions and states the semantics the whole ecosystem depends on — a value of 0.04 is a 4% probability of yes, not a claim that Jev is 4% confident.
+- [ClauJev](https://github.com/Civalski/claujev) ![stars](https://img.shields.io/github/stars/Civalski/claujev?style=flat-square&label=%E2%98%85) - Second opinion: hooks Jev into Claude Code on the principle that Claude does the work and Jev checks it before the change lands, keeping the request, the verdict and the probability for each check.
 
 ### Scoring & Ranking
 
@@ -684,6 +686,7 @@ Source file: [`categories/robotics-physical.md`](categories/robotics-physical.md
 - [Jev for Physical AI](https://github.com/robokrunch/jev-physical-ai) ![stars](https://img.shields.io/github/stars/robokrunch/jev-physical-ai?style=flat-square&label=%E2%98%85) - Fleet triage: runs Jev as the decision layer for a 10,000-robot warehouse fleet over 41 bilingual incident templates and publishes 0.527 s p50 latency, $24.57 per million decisions and 91.3% agreement with template labels, alongside a crossover against a self-hosted ModernBERT.
 - [EmbodiedJev](https://github.com/FBddcz/embodied-jev) ![stars](https://img.shields.io/github/stars/FBddcz/embodied-jev?style=flat-square&label=%E2%98%85) - Embodied robotics: MuJoCo decision workbench for a Franka Panda arm that compares TypeSafe Jev System One candidate decisions against reactive baselines and LLMs across pick, place, and obstacle tasks.
 - [SiteEye](https://github.com/seominpapa/siteeye) ![stars](https://img.shields.io/github/stars/seominpapa/siteeye?style=flat-square&label=%E2%98%85) - Construction safety: predicts near-misses on a construction site from YOLO vision feeding a Jev decision layer, carrying the verdict into a domain where the failure mode is a physical injury.
+- [Jev for industrial automation](https://github.com/smslavin/jev-industrial-samples) ![stars](https://img.shields.io/github/stars/smslavin/jev-industrial-samples?style=flat-square&label=%E2%98%85) - OT workflows: samples putting Jev beside an LLM agent in industrial automation, where the agent reasons and proposes, code keeps control and policy, and Jev supplies the fast typed judgments with probabilities.
 
 ### Finance & Trading
 

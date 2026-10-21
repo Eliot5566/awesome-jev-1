@@ -21,3 +21,4 @@ Use this category for interfaces where a Jev decision changes what the user sees
 - [shapeshift](https://github.com/anishfn/shapeshift) - Input: one text box that morphs into the right UI as you type, asking Jev which control the sentence calls for, and running offline.
 - [Jevcast](https://github.com/RyanErkal/jevcast) - Desktop productivity: native macOS launcher and window manager that uses Jev to match natural-language window and action commands to known application workflows with local response caching.
 - [Laser](https://github.com/iYassr/omarchy-laser) - Focus mode: blocks distractions on an Omarchy/Hyprland desktop, using Jev to decide what to block.
+- [Photo Ferret](https://github.com/JonesSteven/photo-ferret) - Browsable ratings: an image model scores every photo on dozens of scales and the gallery is browsed with sliders instead of tags, demoed live over about 2,800 nature photographs.
