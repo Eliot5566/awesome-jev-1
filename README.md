@@ -63,13 +63,13 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 - [Classification & Routing](categories/classification-routing.md) — 75 entries
 - [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 12 entries
-- [Verification & Guardrails](categories/verification-guardrails.md) — 58 entries
+- [Verification & Guardrails](categories/verification-guardrails.md) — 59 entries
 - [Scoring & Ranking](categories/scoring-ranking.md) — 44 entries
 - [Agent Decisions](categories/agent-decisions.md) — 63 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 11 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 45 entries
 - [Calibration & Research](categories/calibration-research.md) — 54 entries
-- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 118 entries
+- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 119 entries
 - [Game & Simulation](categories/game-simulation.md) — 26 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 11 entries
 - [Finance & Trading](categories/finance-trading.md) — 10 entries
@@ -276,6 +276,7 @@ Source file: [`categories/verification-guardrails.md`](categories/verification-g
 - [jev-mail-triage](https://github.com/soderlind/jev-mail-triage) ![stars](https://img.shields.io/github/stars/soderlind/jev-mail-triage?style=flat-square&label=%E2%98%85) - Phishing triage: triages spam and phishing locally for Proton Mail Bridge, with an `evaluate --labels` mode that measures accuracy against labelled test emails.
 - [Document review with Unsiloed and Jev](https://www.unsiloed.ai/blog/document-review-unsiloed-typesafe-jev) - Document review: gates extracted fields with `Noul` questions and states the semantics the whole ecosystem depends on — a value of 0.04 is a 4% probability of yes, not a claim that Jev is 4% confident.
 - [ClauJev](https://github.com/Civalski/claujev) ![agent: Claude Code](https://img.shields.io/badge/agent-Claude%20Code-C1512C?style=flat-square) ![stars](https://img.shields.io/github/stars/Civalski/claujev?style=flat-square&label=%E2%98%85) - Second opinion: hooks Jev into Claude Code on the principle that Claude does the work and Jev checks it before the change lands, keeping the request, the verdict and the probability for each check.
+- [MedGemma Ophthalmology + JEV](https://github.com/harsaas/medgemma_Ophthalmology_jev) ![stars](https://img.shields.io/github/stars/harsaas/medgemma_Ophthalmology_jev?style=flat-square&label=%E2%98%85) - Medical check: a research demo that reads retinal fundus images with a fine-tuned MedGemma adapter, has Jev evaluate the generated findings, and drafts separate patient and ophthalmologist summaries - stating explicitly that it is not a clinical decision system.
 
 ### Scoring & Ranking
 
@@ -641,6 +642,7 @@ Source file: [`categories/infra-sdks-integrations.md`](categories/infra-sdks-int
 - [Jev Proxy Pool](https://github.com/left0ver/jev-proxy-pool) ![stars](https://img.shields.io/github/stars/left0ver/jev-proxy-pool?style=flat-square&label=%E2%98%85) - Operations: a rotating Jev API key pool with a web admin panel, the unglamorous infrastructure a shared deployment needs once more than one person uses it.
 - [Decision Models](https://decisionmodels.io) ![type: hosted](https://img.shields.io/badge/type-hosted-4B5563?style=flat-square) - Hosted API: Jev-compatible `POST /v1/systemone` serving open decision models (vLLM-SR d3, Blink, Quyet) for `Choice`, `Score` and `Noul` questions, with an EU tier and a Peer-to-Peer tier, from $0.019 per 1M input tokens with output free.
 - [tsjev for DuckDB](https://github.com/Querio-App/duckdb-jev) ![stars](https://img.shields.io/github/stars/Querio-App/duckdb-jev?style=flat-square&label=%E2%98%85) - SQL extension: labels, filters and scores DuckDB rows with Jev from inside a query, so a `tsjev_label(body, ['billing', 'bug', 'feature request', 'other'])` column plus a `GROUP BY` replaces an export-and-classify round trip.
+- [jevPipe](https://github.com/hpietukhin/jevpipe) ![stars](https://img.shields.io/github/stars/hpietukhin/jevpipe?style=flat-square&label=%E2%98%85) - Unix pipe: a Go CLI that reads stdin and writes JSON to stdout through Jev's `/v1/systemone`, so a typed decision becomes one more step in a shell pipeline.
 
 ### Game & Simulation
 
