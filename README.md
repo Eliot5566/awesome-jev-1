@@ -63,19 +63,19 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 - [Classification & Routing](categories/classification-routing.md) — 76 entries
 - [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 12 entries
-- [Verification & Guardrails](categories/verification-guardrails.md) — 59 entries
+- [Verification & Guardrails](categories/verification-guardrails.md) — 60 entries
 - [Scoring & Ranking](categories/scoring-ranking.md) — 44 entries
 - [Agent Decisions](categories/agent-decisions.md) — 63 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 11 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 45 entries
-- [Calibration & Research](categories/calibration-research.md) — 54 entries
+- [Calibration & Research](categories/calibration-research.md) — 55 entries
 - [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 119 entries
 - [Game & Simulation](categories/game-simulation.md) — 26 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 11 entries
 - [Finance & Trading](categories/finance-trading.md) — 10 entries
 - [Compliance & Legal](categories/compliance-legal.md) — 2 entries
 - [Content Moderation](categories/content-moderation.md) — 12 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 105 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 106 entries
 
 ### Open categories still being seeded
 
@@ -278,6 +278,7 @@ Source file: [`categories/verification-guardrails.md`](categories/verification-g
 - [Document review with Unsiloed and Jev](https://www.unsiloed.ai/blog/document-review-unsiloed-typesafe-jev) - Document review: gates extracted fields with `Noul` questions and states the semantics the whole ecosystem depends on — a value of 0.04 is a 4% probability of yes, not a claim that Jev is 4% confident.
 - [ClauJev](https://github.com/Civalski/claujev) ![agent: Claude Code](https://img.shields.io/badge/agent-Claude%20Code-C1512C?style=flat-square) ![stars](https://img.shields.io/github/stars/Civalski/claujev?style=flat-square&label=%E2%98%85) - Second opinion: hooks Jev into Claude Code on the principle that Claude does the work and Jev checks it before the change lands, keeping the request, the verdict and the probability for each check.
 - [MedGemma Ophthalmology + JEV](https://github.com/harsaas/medgemma_Ophthalmology_jev) ![stars](https://img.shields.io/github/stars/harsaas/medgemma_Ophthalmology_jev?style=flat-square&label=%E2%98%85) - Medical check: a research demo that reads retinal fundus images with a fine-tuned MedGemma adapter, has Jev evaluate the generated findings, and drafts separate patient and ophthalmologist summaries - stating explicitly that it is not a clinical decision system.
+- [ReadyCode Reader](https://github.com/ReadycodeAI/readycode-reader) ![stars](https://img.shields.io/github/stars/ReadycodeAI/readycode-reader?style=flat-square&label=%E2%98%85) - Document evidence: searches a large PDF, Word or Excel file locally for up to 20 candidate passages and makes one Jev call with typed relevance checks, returning only passages it can cite instead of putting the document into context.
 
 ### Scoring & Ranking
 
@@ -520,6 +521,7 @@ Source file: [`categories/calibration-research.md`](categories/calibration-resea
 - [Phocinae Largha 150M](https://github.com/Phocinae/Phocinae-Largha-150M-v1) ![stars](https://img.shields.io/github/stars/Phocinae/Phocinae-Largha-150M-v1?style=flat-square&label=%E2%98%85) - Open model: a 144.3M-parameter bilingual (English/Chinese) typed decision model on mmBERT-small that returns calibrated `Choice`, `Score` and `Noul` probabilities in one forward pass so callers gate or escalate on the numbers; runs locally, 21.0 ms p50 per decision on an RTX 5090, with Apache-2.0 weights.
 - [Decision 3.0](https://www.reddit.com/r/LocalLLaMA/comments/1x3th4p/) - Open models: a multimodal decision-model family spanning 0.6B to 27B that reports ranking first on both Jev Decision Index boards.
 - [VideoJev](https://github.com/MCG-NJU/VideoJev) ![stars](https://img.shields.io/github/stars/MCG-NJU/VideoJev?style=flat-square&label=%E2%98%85) - Video understanding: Jev-inspired System One models score temporal membership and multiple-choice answers for several queries over one shared video prefix, then decode scores into intervals and selected answers without generating text.
+- [minimind-jev](https://github.com/vicfei/minimind-jev) ![stars](https://img.shields.io/github/stars/vicfei/minimind-jev?style=flat-square&label=%E2%98%85) - Train your own: a frozen Chinese encoder behind a small trained head, published with v0.1 weights and a results table on the same 100-query protocol as jev-rag-zh-benchmark, where hosted Jev reaches nDCG@5 0.546 with a confidence interval and the trained head 0.488.
 
 ### Infra / SDKs / Integrations
 
@@ -840,6 +842,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Can Jev save my inbox from the Democrats?](https://huggingface.co/blog/stephen-solka/use-jev-to-delete-fundraising-emails) - Write-up: a Hugging Face post on using a local decision model to clear a real inbox of political fundraising mail.
 - [Mastering TypeSafe Jev](https://github.com/udooz/mastering-jev-and-kev-book) ![stars](https://img.shields.io/github/stars/udooz/mastering-jev-and-kev-book?style=flat-square&label=%E2%98%85) - Book: a hands-on engineering playbook for decision engines whose thesis is that code computes, LLMs create, Jev decides, and fresh state proves the result, with working Python and a mini-project in every chapter.
 - [Build your own decision model](https://nishtahir.com/build-your-own-decision-model/) - Tutorial: explains that a System One model answers every allowed option with a calibrated probability in a single pass, where a language model constrained to emit the same JSON took 11 passes in the worked example.
+- [awesome-jev-resources](https://github.com/karozi/awesome-jev-resources) ![stars](https://img.shields.io/github/stars/karozi/awesome-jev-resources?style=flat-square&label=%E2%98%85) - Curated list: collects Jev guides, official documentation and community projects - the fifth curated list in this catalogue, listed for the same reason as the other four.
 
 ## Submission format
 
