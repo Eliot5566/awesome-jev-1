@@ -69,7 +69,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 11 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 45 entries
 - [Calibration & Research](categories/calibration-research.md) — 55 entries
-- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 119 entries
+- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 120 entries
 - [Game & Simulation](categories/game-simulation.md) — 26 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 11 entries
 - [Finance & Trading](categories/finance-trading.md) — 10 entries
@@ -646,6 +646,7 @@ Source file: [`categories/infra-sdks-integrations.md`](categories/infra-sdks-int
 - [Decision Models](https://decisionmodels.io) ![type: hosted](https://img.shields.io/badge/type-hosted-4B5563?style=flat-square) - Hosted API: Jev-compatible `POST /v1/systemone` serving open decision models (vLLM-SR d3, Blink, Quyet) for `Choice`, `Score` and `Noul` questions, with an EU tier and a Peer-to-Peer tier, from $0.019 per 1M input tokens with output free.
 - [tsjev for DuckDB](https://github.com/Querio-App/duckdb-jev) ![stars](https://img.shields.io/github/stars/Querio-App/duckdb-jev?style=flat-square&label=%E2%98%85) - SQL extension: labels, filters and scores DuckDB rows with Jev from inside a query, so a `tsjev_label(body, ['billing', 'bug', 'feature request', 'other'])` column plus a `GROUP BY` replaces an export-and-classify round trip.
 - [jevPipe](https://github.com/hpietukhin/jevpipe) ![stars](https://img.shields.io/github/stars/hpietukhin/jevpipe?style=flat-square&label=%E2%98%85) - Unix pipe: a Go CLI that reads stdin and writes JSON to stdout through Jev's `/v1/systemone`, so a typed decision becomes one more step in a shell pipeline.
+- [solvi](https://github.com/solvi-ai/solvi) ![type: library](https://img.shields.io/badge/type-library-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/solvi-ai/solvi?style=flat-square&label=%E2%98%85) - Decision infrastructure: Python runtime whose System One adapter sends typed questions to Jev as `Choice` and `Noul` and then accepts, rejects or escalates each answer through hard checks, calibrated confidence thresholds and a hand-off to a person, storing every decision as a hash-chained replayable trace.
 
 ### Game & Simulation
 
