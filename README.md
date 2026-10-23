@@ -69,12 +69,12 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 11 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 45 entries
 - [Calibration & Research](categories/calibration-research.md) — 55 entries
-- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 120 entries
+- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 121 entries
 - [Game & Simulation](categories/game-simulation.md) — 26 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 11 entries
 - [Finance & Trading](categories/finance-trading.md) — 10 entries
-- [Compliance & Legal](categories/compliance-legal.md) — 2 entries
-- [Content Moderation](categories/content-moderation.md) — 12 entries
+- [Compliance & Legal](categories/compliance-legal.md) — 3 entries
+- [Content Moderation](categories/content-moderation.md) — 13 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 106 entries
 
 ### Open categories still being seeded
@@ -647,6 +647,7 @@ Source file: [`categories/infra-sdks-integrations.md`](categories/infra-sdks-int
 - [tsjev for DuckDB](https://github.com/Querio-App/duckdb-jev) ![stars](https://img.shields.io/github/stars/Querio-App/duckdb-jev?style=flat-square&label=%E2%98%85) - SQL extension: labels, filters and scores DuckDB rows with Jev from inside a query, so a `tsjev_label(body, ['billing', 'bug', 'feature request', 'other'])` column plus a `GROUP BY` replaces an export-and-classify round trip.
 - [jevPipe](https://github.com/hpietukhin/jevpipe) ![stars](https://img.shields.io/github/stars/hpietukhin/jevpipe?style=flat-square&label=%E2%98%85) - Unix pipe: a Go CLI that reads stdin and writes JSON to stdout through Jev's `/v1/systemone`, so a typed decision becomes one more step in a shell pipeline.
 - [solvi](https://github.com/solvi-ai/solvi) ![type: library](https://img.shields.io/badge/type-library-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/solvi-ai/solvi?style=flat-square&label=%E2%98%85) - Decision infrastructure: Python runtime whose System One adapter sends typed questions to Jev as `Choice` and `Noul` and then accepts, rejects or escalates each answer through hard checks, calibrated confidence thresholds and a hand-off to a person, storing every decision as a hash-chained replayable trace.
+- [Jev Moderation for Laravel](https://github.com/phoenix1331/laravel-jev-moderation) ![stars](https://img.shields.io/github/stars/phoenix1331/laravel-jev-moderation?style=flat-square&label=%E2%98%85) - PHP framework: a trait that classifies an Eloquent model's content every time it is saved, with tests and static analysis wired into CI.
 
 ### Game & Simulation
 
@@ -716,6 +717,7 @@ Source file: [`categories/compliance-legal.md`](categories/compliance-legal.md)
 
 - [LegalForecast-MTD](https://github.com/johnhughes3/LegalForecastBench) ![stars](https://img.shields.io/github/stars/johnhughes3/LegalForecastBench?style=flat-square&label=%E2%98%85) - Legal forecasting: benchmark that asks Jev to predict federal motion-to-dismiss rulings from the judge's written record and scores the calibrated probabilities with claim-defendant micro-Brier metrics.
 - [Jev Policy Engine](https://github.com/BhavinM/jev-policy-engine) ![stars](https://img.shields.io/github/stars/BhavinM/jev-policy-engine?style=flat-square&label=%E2%98%85) - Policy conformance: universal Policy-as-Code SDK that allows DevOps and security teams to enforce deterministic AI governance rules in YAML via Jev with audit mode and fail-closed controls.
+- [Jev grievance triage](https://github.com/aen07/jev-grievance-triage) ![stars](https://img.shields.io/github/stars/aen07/jev-grievance-triage?style=flat-square&label=%E2%98%85) - Development finance: reads one grievance and returns an auditable triage decision built from 23 narrow calibrated questions, routing a reprisal claim for instance to a regional specialist with urgency set and identity fields redacted.
 
 ### Content Moderation
 
@@ -733,6 +735,7 @@ Source file: [`categories/content-moderation.md`](categories/content-moderation.
 - [social-risk-qwen-jev](https://github.com/TianJinWeiBoss520/social-risk-qwen-jev) ![stars](https://img.shields.io/github/stars/TianJinWeiBoss520/social-risk-qwen-jev?style=flat-square&label=%E2%98%85) - Chinese moderation: pairs a Qwen3-VL LoRA with a Jev decision model to judge multimodal social-risk content.
 - [HN Jev Sorter](https://github.com/ritza-co/hn-jev-sorter) ![stars](https://img.shields.io/github/stars/ritza-co/hn-jev-sorter?style=flat-square&label=%E2%98%85) - Reading aid: a Chrome extension that sorts Hacker News comments into buckets you choose while you read, with Jev classifying each comment in about a second.
 - [Trio-Spark Comment Bouncer](https://github.com/machinefi/trio-spark/tree/main/demos/comment-bouncer) ![stars](https://img.shields.io/github/stars/machinefi/trio-spark?style=flat-square&label=%E2%98%85) - Comment moderation: asks the System One-compatible Trio-Spark API one show/hide `choice` per live-chat comment, then two adjustable thresholds show, send to review or auto-hide each comment from the stored P(hide) without calling the model again.
+- [stalwart-jev](https://github.com/mikluko/stalwart-jev) ![stars](https://img.shields.io/github/stars/mikluko/stalwart-jev?style=flat-square&label=%E2%98%85) - Drop-in classifier: serves the chat-completions endpoint Stalwart's LLM spam classifier calls, but asks Jev one `Choice` over subject and body and answers in the server's own vocabulary - Unsolicited, Commercial, Harmful or Legitimate.
 
 ### Related Practices / Discussions
 
