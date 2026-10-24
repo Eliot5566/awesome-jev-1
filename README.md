@@ -70,7 +70,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 45 entries
 - [Calibration & Research](categories/calibration-research.md) — 55 entries
 - [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 122 entries
-- [Game & Simulation](categories/game-simulation.md) — 26 entries
+- [Game & Simulation](categories/game-simulation.md) — 27 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 11 entries
 - [Finance & Trading](categories/finance-trading.md) — 10 entries
 - [Compliance & Legal](categories/compliance-legal.md) — 3 entries
@@ -681,6 +681,7 @@ Source file: [`categories/game-simulation.md`](categories/game-simulation.md)
 - [1 Million Emojis](https://chriswijnia.com/lab/emoji) - Collaborative art: a shared 1000 × 1000 emoji canvas where, after each visitor stroke, one Jev request asks a `Choice` over named (emoji, square) pairs next to it and a `Noul` on whether the stroke is an unfinished shape, finishing the loop or line above 0.7 and otherwise sampling its pick from the returned probabilities ([source](https://github.com/cwdx/1-million-emojis)).
 - [FlightBench](https://github.com/AlperKartkaya/FlightBench) ![stars](https://img.shields.io/github/stars/AlperKartkaya/FlightBench?style=flat-square&label=%E2%98%85) - Flight simulation: a fixed-wing landing simulator and benchmark where you can compete with Jev in landing a plane, mapping four Jev `Choice` decisions to aircraft controls in JSBSim and benchmarking landings against human-pilot, baseline, and LLM controllers, with planned support for open-source Jev-like decision models.
 - [AI Hold'em](https://www.aiholdem.gg) - Gaming: browser-based Texas Hold'em where a TypeSafe Jev bot receives structured hand state and a typed `Choice` over complete legal moves and bet sizes, with the poker engine validating the selected action before it is applied ([source](https://github.com/jonime/ai-holdem)).
+- [jeff-ink](https://github.com/saembit/jeff-ink) ![type: library](https://img.shields.io/badge/type-library-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/saembit/jeff-ink?style=flat-square&label=%E2%98%85) - Interactive fiction: inkjs wrapper where every line the player types is one request, a `Choice` over the story's current authored choices plus none and two `Noul`s for asking for help and talking outside the story, so the parser understands free text while the story can only go where the author wrote it.
 
 ### Robotics & Physical
 

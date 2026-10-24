@@ -11,7 +11,6 @@ Use this category for programs where Jev sorts incoming state into categories or
 ## Entries
 
 - [Neutron Email Triage](https://github.com/Geneonosis/neutron-email-triage) - Email triage: uses Jev `Choice` to classify Proton Mail Bridge messages as keep, archive, review, or trash, defaults to dry-run, and only permits execute-mode trash moves when trash wins with probability at or above an explicitly supplied threshold of at least 0.9.
-
 - [JEV Book Tags](https://github.com/iamjonatha/jev-book-tags) `{type: plugin}` - Library cataloguing: a calibre plugin asks Jev `Noul` questions about book genres and subjects, applies configurable per-tag probability thresholds, and preserves existing tags while leaving uncertain results for review.
 - [Diffusion Jev](https://github.com/Hangzhi/diffusion-jev-sglang) - Visual classification: independent Jev-style DiffusionGemma/SGLang server that selects doodle and flower labels from image pixels with typed Choice questions and displays candidate scores in a drawing playground, with public evaluation artifacts and uncalibrated probabilities.
 - [Notra](https://github.com/usenotra/notra) - Marketing analytics: production GEO platform whose `NOTRA_JEV_CLASSIFIERS` flag routes brand-visibility classifiers off an LLM and onto Jev `Boolean` decisions at a 0.5 threshold, targeting 300 ms p50.
