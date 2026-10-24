@@ -63,17 +63,17 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 - [Classification & Routing](categories/classification-routing.md) — 76 entries
 - [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 12 entries
-- [Verification & Guardrails](categories/verification-guardrails.md) — 60 entries
+- [Verification & Guardrails](categories/verification-guardrails.md) — 61 entries
 - [Scoring & Ranking](categories/scoring-ranking.md) — 44 entries
 - [Agent Decisions](categories/agent-decisions.md) — 64 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 11 entries
-- [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 45 entries
+- [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 46 entries
 - [Calibration & Research](categories/calibration-research.md) — 55 entries
 - [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 122 entries
 - [Game & Simulation](categories/game-simulation.md) — 27 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 11 entries
 - [Finance & Trading](categories/finance-trading.md) — 10 entries
-- [Compliance & Legal](categories/compliance-legal.md) — 3 entries
+- [Compliance & Legal](categories/compliance-legal.md) — 4 entries
 - [Content Moderation](categories/content-moderation.md) — 13 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 106 entries
 
@@ -278,6 +278,7 @@ Source file: [`categories/verification-guardrails.md`](categories/verification-g
 - [ClauJev](https://github.com/Civalski/claujev) ![agent: Claude Code](https://img.shields.io/badge/agent-Claude%20Code-C1512C?style=flat-square) ![stars](https://img.shields.io/github/stars/Civalski/claujev?style=flat-square&label=%E2%98%85) - Second opinion: hooks Jev into Claude Code on the principle that Claude does the work and Jev checks it before the change lands, keeping the request, the verdict and the probability for each check.
 - [MedGemma Ophthalmology + JEV](https://github.com/harsaas/medgemma_Ophthalmology_jev) ![stars](https://img.shields.io/github/stars/harsaas/medgemma_Ophthalmology_jev?style=flat-square&label=%E2%98%85) - Medical check: a research demo that reads retinal fundus images with a fine-tuned MedGemma adapter, has Jev evaluate the generated findings, and drafts separate patient and ophthalmologist summaries - stating explicitly that it is not a clinical decision system.
 - [ReadyCode Reader](https://github.com/ReadycodeAI/readycode-reader) ![stars](https://img.shields.io/github/stars/ReadycodeAI/readycode-reader?style=flat-square&label=%E2%98%85) - Document evidence: searches a large PDF, Word or Excel file locally for up to 20 candidate passages and makes one Jev call with typed relevance checks, returning only passages it can cite instead of putting the document into context.
+- [playwright-system1-triage](https://github.com/kint4/playwright-system1-triage) ![stars](https://img.shields.io/github/stars/kint4/playwright-system1-triage?style=flat-square&label=%E2%98%85) - CI triage: categorises Playwright failures with typed decisions instead of a prose essay per timeout, on the argument that when eighty specs fail at once a generative model is both slow and unreadable.
 
 ### Scoring & Ranking
 
@@ -462,6 +463,7 @@ Source file: [`categories/evaluation-benchmarking.md`](categories/evaluation-ben
 - [Hafen](https://github.com/abhimanyupandian/hafen) ![stars](https://img.shields.io/github/stars/abhimanyupandian/hafen?style=flat-square&label=%E2%98%85) - A clean and minimalist desktop tool to test your AI agents the way your users talk to them.
 - [Jev vs Claude Haiku 4.5 as input guardrails](https://github.com/rahulbansalc6414/jev-as-a-guardrail) ![stars](https://img.shields.io/github/stars/rahulbansalc6414/jev-as-a-guardrail?style=flat-square&label=%E2%98%85) - Benchmark: compares the two as input guardrails on detection rate, false positive rate, latency and cost, over a documented prompt mix of 53% attack, 13% evasion and 33% benign, with duplicates removed.
 - [Decision Models as Guardrails](https://github.com/raxITlabs/decision-models-as-guardrails) ![stars](https://img.shields.io/github/stars/raxITlabs/decision-models-as-guardrails?style=flat-square&label=%E2%98%85) - Guardrail benchmark: asks whether a decision model can replace a managed guardrail service, sending the same labelled rows to Jev, Kev, Open-Jev, Laya, Clef and Strands Decider, to the Perplexity and OpenAI Decisions APIs, and to Bedrock Guardrails, then comparing accuracy against cost.
+- [Bot Derby](https://github.com/Day-in-the-Country-LLC/bot-derby) ![stars](https://img.shields.io/github/stars/Day-in-the-Country-LLC/bot-derby?style=flat-square&label=%E2%98%85) - Head to head: Ferdi is TypeSafe Jev and Bodi is OpenAI Decisions, each starting season two with $50,000 of simulated cash in a stocks-only paper-trading experiment, with a public scoreboard tracking who is ahead.
 
 ### Calibration & Research
 
@@ -720,6 +722,7 @@ Source file: [`categories/compliance-legal.md`](categories/compliance-legal.md)
 - [LegalForecast-MTD](https://github.com/johnhughes3/LegalForecastBench) ![stars](https://img.shields.io/github/stars/johnhughes3/LegalForecastBench?style=flat-square&label=%E2%98%85) - Legal forecasting: benchmark that asks Jev to predict federal motion-to-dismiss rulings from the judge's written record and scores the calibrated probabilities with claim-defendant micro-Brier metrics.
 - [Jev Policy Engine](https://github.com/BhavinM/jev-policy-engine) ![stars](https://img.shields.io/github/stars/BhavinM/jev-policy-engine?style=flat-square&label=%E2%98%85) - Policy conformance: universal Policy-as-Code SDK that allows DevOps and security teams to enforce deterministic AI governance rules in YAML via Jev with audit mode and fail-closed controls.
 - [Jev grievance triage](https://github.com/aen07/jev-grievance-triage) ![stars](https://img.shields.io/github/stars/aen07/jev-grievance-triage?style=flat-square&label=%E2%98%85) - Development finance: reads one grievance and returns an auditable triage decision built from 23 narrow calibrated questions, routing a reprisal claim for instance to a regional specialist with urgency set and identity fields redacted.
+- [JevGate](https://github.com/sanketmuchhala/jevgate) ![stars](https://img.shields.io/github/stars/sanketmuchhala/jevgate?style=flat-square&label=%E2%98%85) - Institutional policy: a hybrid engine where Jev 1.14 supplies calibrated probabilities, a System-2 model supplies verdicts with quoted evidence, and Python owns the policy, the thresholds and the three-valued rule logic.
 
 ### Content Moderation
 
