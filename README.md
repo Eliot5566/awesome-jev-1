@@ -70,7 +70,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 46 entries
 - [Calibration & Research](categories/calibration-research.md) — 55 entries
 - [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 123 entries
-- [Game & Simulation](categories/game-simulation.md) — 27 entries
+- [Game & Simulation](categories/game-simulation.md) — 28 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 11 entries
 - [Finance & Trading](categories/finance-trading.md) — 10 entries
 - [Compliance & Legal](categories/compliance-legal.md) — 4 entries
@@ -684,6 +684,7 @@ Source file: [`categories/game-simulation.md`](categories/game-simulation.md)
 - [FlightBench](https://github.com/AlperKartkaya/FlightBench) ![stars](https://img.shields.io/github/stars/AlperKartkaya/FlightBench?style=flat-square&label=%E2%98%85) - Flight simulation: a fixed-wing landing simulator and benchmark where you can compete with Jev in landing a plane, mapping four Jev `Choice` decisions to aircraft controls in JSBSim and benchmarking landings against human-pilot, baseline, and LLM controllers, with planned support for open-source Jev-like decision models.
 - [AI Hold'em](https://www.aiholdem.gg) - Gaming: browser-based Texas Hold'em where a TypeSafe Jev bot receives structured hand state and a typed `Choice` over complete legal moves and bet sizes, with the poker engine validating the selected action before it is applied ([source](https://github.com/jonime/ai-holdem)).
 - [jeff-ink](https://github.com/saembit/jeff-ink) ![type: library](https://img.shields.io/badge/type-library-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/saembit/jeff-ink?style=flat-square&label=%E2%98%85) - Interactive fiction: inkjs wrapper where every line the player types is one request, a `Choice` over the story's current authored choices plus none and two `Noul`s for asking for help and talking outside the story, so the parser understands free text while the story can only go where the author wrote it.
+- [Jev Valley](https://github.com/Sarthak8696/jev-valley) ![stars](https://img.shields.io/github/stars/Sarthak8696/jev-valley?style=flat-square&label=%E2%98%85) - Ecosystem simulation: every rabbit, deer and wolf asks Jev a `Choice` for its action each hour plus `Score` (alertness, how weak prey looks, chase effort) and `Noul` (breeding, will a wolf attack) questions that change what happens and are scored against ground truth, an animal can freeze when Jev's confidence is below a threshold, and any failed call stops the run rather than falling back to a guess.
 
 ### Robotics & Physical
 
