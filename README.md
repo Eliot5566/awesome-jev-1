@@ -65,7 +65,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 12 entries
 - [Verification & Guardrails](categories/verification-guardrails.md) — 61 entries
 - [Scoring & Ranking](categories/scoring-ranking.md) — 44 entries
-- [Agent Decisions](categories/agent-decisions.md) — 64 entries
+- [Agent Decisions](categories/agent-decisions.md) — 65 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 11 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 46 entries
 - [Calibration & Research](categories/calibration-research.md) — 55 entries
@@ -397,6 +397,7 @@ Source file: [`categories/agent-decisions.md`](categories/agent-decisions.md)
 - [lossless-compaction](https://github.com/yottayoshida/lossless-compaction) ![agent: Claude Code](https://img.shields.io/badge/agent-Claude%20Code-C1512C?style=flat-square) ![type: plugin](https://img.shields.io/badge/type-plugin-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/yottayoshida/lossless-compaction?style=flat-square&label=%E2%98%85) - Context management: Claude Code plugin that compacts by moving old tool results to local files with no summary, and asks Jev a `Choice` over what was moved out to fetch one back by a question in words.
 - [opencode-jev-safe-compact](https://github.com/lewistouchtech/opencode-jev-safe-compact) ![agent: OpenCode](https://img.shields.io/badge/agent-OpenCode-7C3AED?style=flat-square) ![type: plugin](https://img.shields.io/badge/type-plugin-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/lewistouchtech/opencode-jev-safe-compact?style=flat-square&label=%E2%98%85) - Context management: OpenCode plugin that prunes a session with `Noul` judgments instead of a model-written summary, deciding how much to remove from the ranking rather than from an absolute threshold because a `Noul` score drifts with the shape of the state while its AUC stays at 0.70-0.83; ships three reproducible scripts that make real `Noul` calls against any `/v1/systemone` endpoint.
 - [jeff-act](https://github.com/saembit/jeff-act) ![type: cli](https://img.shields.io/badge/type-cli-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/saembit/jeff-act?style=flat-square&label=%E2%98%85) - Automation: Go library and CLI where Jev picks one action from a YAML allowlist as a `Choice` plus none and each argument as a `Choice` over candidates code found first, then a ranked ladder runs the first action that clears its probability floor, required arguments, precondition and risk gate, with arguments passed to shell actions as environment variables and the API key stripped from every child process.
+- [Engram](https://github.com/Paras5Yadav/engram) ![stars](https://img.shields.io/github/stars/Paras5Yadav/engram?style=flat-square&label=%E2%98%85) - Agent memory: Jev decides what to retain, how observations relate, where to search and when the retrieved evidence is sufficient, while Engram supplies the durable local SQLite store, the connections and the context block for the next response.
 
 ### Data Labeling & Curation
 
