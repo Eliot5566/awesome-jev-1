@@ -73,9 +73,9 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Game & Simulation](categories/game-simulation.md) — 28 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 11 entries
 - [Finance & Trading](categories/finance-trading.md) — 10 entries
-- [Compliance & Legal](categories/compliance-legal.md) — 4 entries
-- [Content Moderation](categories/content-moderation.md) — 13 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 106 entries
+- [Compliance & Legal](categories/compliance-legal.md) — 5 entries
+- [Content Moderation](categories/content-moderation.md) — 14 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 107 entries
 
 ### Open categories still being seeded
 
@@ -726,6 +726,7 @@ Source file: [`categories/compliance-legal.md`](categories/compliance-legal.md)
 - [Jev Policy Engine](https://github.com/BhavinM/jev-policy-engine) ![stars](https://img.shields.io/github/stars/BhavinM/jev-policy-engine?style=flat-square&label=%E2%98%85) - Policy conformance: universal Policy-as-Code SDK that allows DevOps and security teams to enforce deterministic AI governance rules in YAML via Jev with audit mode and fail-closed controls.
 - [Jev grievance triage](https://github.com/aen07/jev-grievance-triage) ![stars](https://img.shields.io/github/stars/aen07/jev-grievance-triage?style=flat-square&label=%E2%98%85) - Development finance: reads one grievance and returns an auditable triage decision built from 23 narrow calibrated questions, routing a reprisal claim for instance to a regional specialist with urgency set and identity fields redacted.
 - [JevGate](https://github.com/sanketmuchhala/jevgate) ![stars](https://img.shields.io/github/stars/sanketmuchhala/jevgate?style=flat-square&label=%E2%98%85) - Institutional policy: a hybrid engine where Jev 1.14 supplies calibrated probabilities, a System-2 model supplies verdicts with quoted evidence, and Python owns the policy, the thresholds and the three-valued rule logic.
+- [jev-pii](https://github.com/senthilsweb/jev-pii) ![stars](https://img.shields.io/github/stars/senthilsweb/jev-pii?style=flat-square&label=%E2%98%85) - Compliance in SQL: Jev answers inside DuckDB as extra columns - a zero-to-one score or one option from a list - so personal data and the privacy regimes that apply become columns you can filter, join and count.
 
 ### Content Moderation
 
@@ -744,6 +745,7 @@ Source file: [`categories/content-moderation.md`](categories/content-moderation.
 - [HN Jev Sorter](https://github.com/ritza-co/hn-jev-sorter) ![stars](https://img.shields.io/github/stars/ritza-co/hn-jev-sorter?style=flat-square&label=%E2%98%85) - Reading aid: a Chrome extension that sorts Hacker News comments into buckets you choose while you read, with Jev classifying each comment in about a second.
 - [Trio-Spark Comment Bouncer](https://github.com/machinefi/trio-spark/tree/main/demos/comment-bouncer) ![stars](https://img.shields.io/github/stars/machinefi/trio-spark?style=flat-square&label=%E2%98%85) - Comment moderation: asks the System One-compatible Trio-Spark API one show/hide `choice` per live-chat comment, then two adjustable thresholds show, send to review or auto-hide each comment from the stored P(hide) without calling the model again.
 - [stalwart-jev](https://github.com/mikluko/stalwart-jev) ![stars](https://img.shields.io/github/stars/mikluko/stalwart-jev?style=flat-square&label=%E2%98%85) - Drop-in classifier: serves the chat-completions endpoint Stalwart's LLM spam classifier calls, but asks Jev one `Choice` over subject and body and answers in the server's own vocabulary - Unsolicited, Commercial, Harmful or Legitimate.
+- [Jev X Blocker](https://github.com/bit-cook/Jev-X-Blocker) ![stars](https://img.shields.io/github/stars/bit-cook/Jev-X-Blocker?style=flat-square&label=%E2%98%85) - Local moderation: a Chrome MV3 extension that uses your own Jev key to hide high-confidence sexual and solicitation content on X, covering posts as well as replies, with a recoverable placeholder rather than a silent removal.
 
 ### Related Practices / Discussions
 
@@ -855,6 +857,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Mastering TypeSafe Jev](https://github.com/udooz/mastering-jev-and-kev-book) ![stars](https://img.shields.io/github/stars/udooz/mastering-jev-and-kev-book?style=flat-square&label=%E2%98%85) - Book: a hands-on engineering playbook for decision engines whose thesis is that code computes, LLMs create, Jev decides, and fresh state proves the result, with working Python and a mini-project in every chapter.
 - [Build your own decision model](https://nishtahir.com/build-your-own-decision-model/) - Tutorial: explains that a System One model answers every allowed option with a calibrated probability in a single pass, where a language model constrained to emit the same JSON took 11 passes in the worked example.
 - [awesome-jev-resources](https://github.com/karozi/awesome-jev-resources) ![stars](https://img.shields.io/github/stars/karozi/awesome-jev-resources?style=flat-square&label=%E2%98%85) - Curated list: collects Jev guides, official documentation and community projects - the fifth curated list in this catalogue, listed for the same reason as the other four.
+- [Jev Notes](https://github.com/Itachi-of-the-Leaf/JevBlog) ![stars](https://img.shields.io/github/stars/Itachi-of-the-Leaf/JevBlog?style=flat-square&label=%E2%98%85) - Explainer: a frontend-only, source-cited walkthrough of Jev, the System One model family and the published RLCD training objective behind them.
 
 ## Submission format
 
