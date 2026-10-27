@@ -62,8 +62,8 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 ## Current coverage
 
 - [Classification & Routing](categories/classification-routing.md) — 76 entries
-- [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 12 entries
-- [Verification & Guardrails](categories/verification-guardrails.md) — 61 entries
+- [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 13 entries
+- [Verification & Guardrails](categories/verification-guardrails.md) — 62 entries
 - [Scoring & Ranking](categories/scoring-ranking.md) — 44 entries
 - [Agent Decisions](categories/agent-decisions.md) — 65 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 11 entries
@@ -73,7 +73,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Game & Simulation](categories/game-simulation.md) — 28 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 11 entries
 - [Finance & Trading](categories/finance-trading.md) — 10 entries
-- [Compliance & Legal](categories/compliance-legal.md) — 5 entries
+- [Compliance & Legal](categories/compliance-legal.md) — 6 entries
 - [Content Moderation](categories/content-moderation.md) — 14 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 107 entries
 
@@ -213,6 +213,7 @@ Source file: [`categories/adaptive-realtime-ui.md`](categories/adaptive-realtime
 - [Jevcast](https://github.com/RyanErkal/jevcast) ![stars](https://img.shields.io/github/stars/RyanErkal/jevcast?style=flat-square&label=%E2%98%85) - Desktop productivity: native macOS launcher and window manager that uses Jev to match natural-language window and action commands to known application workflows with local response caching.
 - [Laser](https://github.com/iYassr/omarchy-laser) ![stars](https://img.shields.io/github/stars/iYassr/omarchy-laser?style=flat-square&label=%E2%98%85) - Focus mode: blocks distractions on an Omarchy/Hyprland desktop, using Jev to decide what to block.
 - [Photo Ferret](https://github.com/JonesSteven/photo-ferret) ![stars](https://img.shields.io/github/stars/JonesSteven/photo-ferret?style=flat-square&label=%E2%98%85) - Browsable ratings: an image model scores every photo on dozens of scales and the gallery is browsed with sliders instead of tags, demoed live over about 2,800 nature photographs.
+- [lark-mbti-jev](https://github.com/akiiwa-games/lark-mbti-jev) ![stars](https://img.shields.io/github/stars/akiiwa-games/lark-mbti-jev?style=flat-square&label=%E2%98%85) - Live overlay: a local Windows tool that keeps a floating MBTI tag on each member of a Feishu/Lark group chat, classifying probabilistically across the four dimensions from that member's message history.
 
 ### Verification & Guardrails
 
@@ -279,6 +280,7 @@ Source file: [`categories/verification-guardrails.md`](categories/verification-g
 - [MedGemma Ophthalmology + JEV](https://github.com/harsaas/medgemma_Ophthalmology_jev) ![stars](https://img.shields.io/github/stars/harsaas/medgemma_Ophthalmology_jev?style=flat-square&label=%E2%98%85) - Medical check: a research demo that reads retinal fundus images with a fine-tuned MedGemma adapter, has Jev evaluate the generated findings, and drafts separate patient and ophthalmologist summaries - stating explicitly that it is not a clinical decision system.
 - [ReadyCode Reader](https://github.com/ReadycodeAI/readycode-reader) ![stars](https://img.shields.io/github/stars/ReadycodeAI/readycode-reader?style=flat-square&label=%E2%98%85) - Document evidence: searches a large PDF, Word or Excel file locally for up to 20 candidate passages and makes one Jev call with typed relevance checks, returning only passages it can cite instead of putting the document into context.
 - [playwright-system1-triage](https://github.com/kint4/playwright-system1-triage) ![stars](https://img.shields.io/github/stars/kint4/playwright-system1-triage?style=flat-square&label=%E2%98%85) - CI triage: categorises Playwright failures with typed decisions instead of a prose essay per timeout, on the argument that when eighty specs fail at once a generative model is both slow and unreadable.
+- [Jev CI triage](https://github.com/tejred213/ci-triage) ![stars](https://img.shields.io/github/stars/tejred213/ci-triage?style=flat-square&label=%E2%98%85) - CI gate: Jev decides what caused each failed test and code decides what to do about it - re-run the build for environment glitches and flaky tests, otherwise file a ticket with the owner - with a one-page HTML report per run.
 
 ### Scoring & Ranking
 
@@ -727,6 +729,7 @@ Source file: [`categories/compliance-legal.md`](categories/compliance-legal.md)
 - [Jev grievance triage](https://github.com/aen07/jev-grievance-triage) ![stars](https://img.shields.io/github/stars/aen07/jev-grievance-triage?style=flat-square&label=%E2%98%85) - Development finance: reads one grievance and returns an auditable triage decision built from 23 narrow calibrated questions, routing a reprisal claim for instance to a regional specialist with urgency set and identity fields redacted.
 - [JevGate](https://github.com/sanketmuchhala/jevgate) ![stars](https://img.shields.io/github/stars/sanketmuchhala/jevgate?style=flat-square&label=%E2%98%85) - Institutional policy: a hybrid engine where Jev 1.14 supplies calibrated probabilities, a System-2 model supplies verdicts with quoted evidence, and Python owns the policy, the thresholds and the three-valued rule logic.
 - [jev-pii](https://github.com/senthilsweb/jev-pii) ![stars](https://img.shields.io/github/stars/senthilsweb/jev-pii?style=flat-square&label=%E2%98%85) - Compliance in SQL: Jev answers inside DuckDB as extra columns - a zero-to-one score or one option from a list - so personal data and the privacy regimes that apply become columns you can filter, join and count.
+- [Jev ToS Checker](https://github.com/shohei81/jev-tos-checker) ![stars](https://img.shields.io/github/stars/shohei81/jev-tos-checker?style=flat-square&label=%E2%98%85) - Terms of service: a Chrome extension that reads the terms on the page you are viewing and points out the clauses that may work against you, shipped in English and Japanese.
 
 ### Content Moderation
 
